@@ -1,0 +1,15 @@
+'concreplus':
+  'title': 'concreplus'
+  'paths': [
+    '/Users/ealbertos/src/concreplus'
+  ]
+'taco':
+  'title': 'taco'
+  'paths': [
+    '/Users/ealbertos/src/tacoarquitecturacontextual'
+  ]
+'cocos':
+  'title': 'cocos'
+  'paths': [
+    '/Users/ealbertos/src/cocos'
+  ]

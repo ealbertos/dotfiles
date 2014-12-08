@@ -1,42 +1,58 @@
-'editor':
-  'showIndentGuide': true
-  'fontSize': 15
-  'fontFamily': 'Menlo'
-  'invisibles': {}
-'core':
-  'disabledPackages': [
-    'go-to-line'
-    'autosave'
-    'autocomplete-plus'
-    'highlight-selected'
-    'exception-reporting'
-    'metrics'
-  ]
-  'themes': [
-    'atom-dark-ui'
-    'solarized-dark-syntax'
-  ]
-  'useReactEditor': true
-'spell-check':
-  'grammars': [
-    'source.gfm'
-    'text.git-commit'
-    'text.plain'
-  ]
-'markdown-preview':
-  'grammars': [
-    'source.gfm'
-    'source.litcoffee'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'tabs-to-spaces':
-  'onSave': 'untabify'
-'welcome':
-  'showOnStartup': false
-'release-notes':
-  'viewedVersion': '0.95.0'
-'tree-view': {}
-'exception-reporting': {}
-'metrics': {}
-'tabs': {}
+'global':
+  'editor':
+    'fontFamily': 'Menlo'
+    'showIndentGuide': true
+    'autoIndentOnPaste': false
+    'fontSize': 14
+    'invisibles': {}
+  'core':
+    'disabledPackages': [
+      'go-to-line'
+      'background-tips'
+      'autosave'
+      'exception-reporting'
+      'metrics'
+      'language-ruby-on-rails'
+    ]
+    'ignoredNames': [
+      '.bundle'
+      '.git'
+      'log'
+      'repositories'
+      'tmp'
+    ]
+    'themes': [
+      'seti-ui'
+      'seti-syntax'
+    ]
+    'hideGitIgnoredFiles': true
+    'useReactEditor': true
+  'spell-check':
+    'grammars': [
+      'source.gfm'
+      'text.git-commit'
+      'text.plain'
+    ]
+  'markdown-preview':
+    'grammars': [
+      'source.gfm'
+      'source.litcoffee'
+      'text.plain'
+      'text.plain.null-grammar'
+    ]
+  'welcome':
+    'showOnStartup': false
+  'release-notes':
+    'viewedVersion': '0.95.0'
+  'tree-view':
+    'hideVcsIgnoredFiles': true
+'.js.rails.source source.jquery.js':
+  'editor': {}
+'.rails.rjs.ruby.source':
+  'editor': {}
+'.ruby.source.sql':
+  'editor': {}
+'.html.ruby.text':
+  'editor': {}
+'.rails.ruby.source':
+  'editor': {}
