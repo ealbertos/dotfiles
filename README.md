@@ -1,10 +1,8 @@
-# @joseramonc dotfiles
-
 # install
 
 Run this:
 
-    git clone https://github.com/joseramonc/dotfiles.git ~/.dotfiles
+    git clone https://github.com/ealbertos/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
     script/bootstrap
 This will symlink the appropriate files in .dotfiles to your home directory. Everything is configured and tweaked within ~/.dotfiles.
