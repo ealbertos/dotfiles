@@ -4,7 +4,6 @@
     'showIndentGuide': true
     'autoIndentOnPaste': false
     'fontSize': 14
-    'invisibles': {}
   'core':
     'disabledPackages': [
       'go-to-line'
@@ -13,6 +12,7 @@
       'exception-reporting'
       'metrics'
       'language-ruby-on-rails'
+      'file-icons'
     ]
     'ignoredNames': [
       '.bundle'
@@ -27,6 +27,7 @@
     ]
     'hideGitIgnoredFiles': true
     'useReactEditor': true
+    'destroyEmptyPanes': false
   'spell-check':
     'grammars': [
       'source.gfm'
@@ -50,9 +51,9 @@
   'editor': {}
 '.rails.rjs.ruby.source':
   'editor': {}
-'.ruby.source.sql':
+'.rails.ruby.source':
   'editor': {}
 '.html.ruby.text':
   'editor': {}
-'.rails.ruby.source':
+'.ruby.source.sql':
   'editor': {}
