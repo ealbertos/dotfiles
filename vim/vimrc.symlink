@@ -1,4 +1,9 @@
+execute pathogen#infect()
 syntax on
+
+set t_Co=256
+set laststatus=2
+let g:airline_theme='powerlineish'
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
