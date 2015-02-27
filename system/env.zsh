@@ -1,1 +1,1 @@
-export EDITOR='mate'
+export EDITOR='/usr/local/bin/mate -w'
