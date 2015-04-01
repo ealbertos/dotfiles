@@ -50,3 +50,7 @@ unset config_files
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+# gpg agent
+GPG_TTY=$(tty)
+export GPG_TTY
