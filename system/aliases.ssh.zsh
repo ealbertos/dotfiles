@@ -13,6 +13,7 @@ fi
 alias htdocs="cd /Applications/MAMP/htdocs"
 alias src="cd src"
 alias dropbox="bash HOME=$HOME/.dropbox-alt /Applications/Dropbox.app/Contents/MacOS/Dropbox &"
+alias gw="grunt watch"
 
 
 # Boxen commands

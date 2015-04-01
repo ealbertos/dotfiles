@@ -17,4 +17,28 @@
   'title': 'codisa'
   'paths': [
     '/Users/ealbertos/src/codisa'
+'sana':
+  'title': 'sana'
+  'paths': [
+    '/Applications/MAMP/htdocs/sana'
+  ]
+'lapa':
+  'title': 'lapa'
+  'paths': [
+    '/Applications/MAMP/htdocs/lapalapa'
+  ]
+'cobacam':
+  'title': 'cobacam'
+  'paths': [
+    '/Applications/MAMP/htdocs/cobacam2'
+  ]
+'finasist':
+  'title': 'finasist'
+  'paths': [
+    '/Applications/MAMP/htdocs/finasist-servicios'
+  ]
+'vacomputacion':
+  'title': 'vacomputacion'
+  'paths': [
+    '/Applications/MAMP/htdocs/vacomputacion'
   ]
