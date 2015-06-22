@@ -19,6 +19,10 @@ alias gw="grunt watch"
 # Boxen commands
 alias offnginx='boxen --disable-service nginx'
 alias onnginx='boxen --enable-service nginx'
+alias offpg='boxen --disable-service postgresql'
+alias onpg='boxen --enable-service postgresql'
+alias offmysql='boxen --disable-service mysql'
+alias onmysql='boxen --enable-service mysql'
 alias bunicorn='bundle exec unicorn -c config/unicorn.rb'
 alias binstall='bundle install'
 alias bupdate='bundle update'
