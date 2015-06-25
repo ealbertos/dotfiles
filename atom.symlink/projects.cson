@@ -1,44 +1,15 @@
-'concreplus':
-  'title': 'concreplus'
-  'paths': [
-    '/Users/ealbertos/src/concreplus'
+andamios:
+  title: "andamios"
+  paths: [
+    "/Users/ealbertos/src/andamios"
   ]
-'taco':
-  'title': 'taco'
-  'paths': [
-    '/Users/ealbertos/src/tacoarquitecturacontextual'
+jrenvases_system:
+  title: "jrenvases_system"
+  paths: [
+    "/Users/ealbertos/src/jrenvases_system"
   ]
-'cocos':
-  'title': 'cocos'
-  'paths': [
-    '/Users/ealbertos/src/cocos'
-  ]
-'codisa':
-  'title': 'codisa'
-  'paths': [
-    '/Users/ealbertos/src/codisa'
-'sana':
-  'title': 'sana'
-  'paths': [
-    '/Applications/MAMP/htdocs/sana'
-  ]
-'lapa':
-  'title': 'lapa'
-  'paths': [
-    '/Applications/MAMP/htdocs/lapalapa'
-  ]
-'cobacam':
-  'title': 'cobacam'
-  'paths': [
-    '/Applications/MAMP/htdocs/cobacam2'
-  ]
-'finasist':
-  'title': 'finasist'
-  'paths': [
-    '/Applications/MAMP/htdocs/finasist-servicios'
-  ]
-'vacomputacion':
-  'title': 'vacomputacion'
-  'paths': [
-    '/Applications/MAMP/htdocs/vacomputacion'
+upp:
+  title: "upp"
+  paths: [
+    "/Users/ealbertos/src/upp"
   ]
