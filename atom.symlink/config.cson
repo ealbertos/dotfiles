@@ -6,10 +6,18 @@
   core:
     audioBeep: false
     excludeVcsIgnoredPaths: false
+    disabledPackages: [
+      "minimap"
+      "minimap-git-diff"
+      "background-tips"
+    ]
   editor:
     invisibles: {}
     fontFamily: "menlo"
     showIndentGuide: true
+    softWrap: true
   minimap:
     plugins:
       "git-diff": true
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true

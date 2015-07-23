@@ -13,3 +13,38 @@ upp:
   paths: [
     "/Users/ealbertos/src/upp"
   ]
+residencialaltabrisa:
+  title: "residencialaltabrisa"
+  paths: [
+    "/Applications/MAMP/htdocs/residencialaltabrisa"
+  ]
+cocos:
+  title: "cocos"
+  paths: [
+    "/Users/ealbertos/src/cocos"
+  ]
+candidatos:
+  title: "candidatos"
+  paths: [
+    "/Users/ealbertos/src/candidatos"
+  ]
+adminpanel:
+  title: "adminpanel"
+  paths: [
+    "/Users/ealbertos/src/adminpanel"
+  ]
+tacoarquitecturacontextual:
+  title: "tacoarquitecturacontextual"
+  paths: [
+    "/Users/ealbertos/src/tacoarquitecturacontextual"
+  ]
+concreplus:
+  title: "concreplus"
+  paths: [
+    "/Users/ealbertos/src/concreplus"
+  ]
+adoro:
+  title: "adoro"
+  paths: [
+    "/Users/ealbertos/src/adoro"
+  ]
