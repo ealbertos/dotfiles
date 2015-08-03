@@ -48,3 +48,8 @@ adoro:
   paths: [
     "/Users/ealbertos/src/adoro"
   ]
+"adminpanel-test":
+  title: "adminpanel-test"
+  paths: [
+    "/Users/ealbertos/src/adminpanel-test"
+  ]

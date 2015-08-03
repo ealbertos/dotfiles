@@ -21,3 +21,4 @@
       "git-diff": true
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
+  "file-icons": {}
