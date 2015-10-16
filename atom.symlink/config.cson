@@ -11,14 +11,21 @@
       "minimap-git-diff"
       "background-tips"
     ]
+    themes: [
+      "one-dark-ui"
+      "atom-dark-fusion-syntax"
+    ]
   editor:
     invisibles: {}
     fontFamily: "menlo"
     showIndentGuide: true
     softWrap: true
+    fontSize: 15
   minimap:
     plugins:
       "git-diff": true
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
-  "file-icons": {}
+  "file-icons":
+    forceShow: true
+  "one-dark-ui": {}

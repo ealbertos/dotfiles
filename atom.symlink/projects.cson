@@ -53,3 +53,28 @@ adoro:
   paths: [
     "/Users/ealbertos/src/adminpanel-test"
   ]
+kanankab:
+  title: "kanankab"
+  paths: [
+    "/Users/ealbertos/src/kanankab"
+  ]
+atlantes:
+  title: "atlantes"
+  paths: [
+    "/Users/ealbertos/src/atlantes"
+  ]
+procon:
+  title: "procon"
+  paths: [
+    "/Users/ealbertos/src/procon"
+  ]
+robotina:
+  title: "robotina"
+  paths: [
+    "/Users/ealbertos/src/robotina"
+  ]
+residencialaltabrisav2:
+  title: "residencial altabrisa v2"
+  paths: [
+    "/Applications/MAMP/htdocs/res_altabrisa"
+  ]
