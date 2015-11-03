@@ -78,3 +78,13 @@ residencialaltabrisav2:
   paths: [
     "/Applications/MAMP/htdocs/res_altabrisa"
   ]
+our_website:
+  title: "our_website"
+  paths: [
+    "/Users/ealbertos/src/our_website"
+  ]
+multilimpia:
+  title: "multilimpia"
+  paths: [
+    "/Users/ealbertos/src/multilimpia"
+  ]

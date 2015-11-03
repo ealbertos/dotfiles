@@ -1,9 +1,33 @@
+" Pathogen first
 execute pathogen#infect()
 syntax on
 
+" Line number
+set number
+
+" Styles
 set t_Co=256
-set laststatus=2
+set guifont=Menlo:h15
+colorscheme Tomorrow-Night
+set showmode
 let g:airline_theme='powerlineish'
+
+set laststatus=2
+
+" Config
+set encoding=utf-8
+set colorcolumn=81
+set autoindent
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+" Show spaces in ruby syntax
+let ruby_space_errors=1
+
+" Key mapping
+inoremap jk <ESC>
+let mapleader = "\<Space>"
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
