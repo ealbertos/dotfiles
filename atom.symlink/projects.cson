@@ -87,4 +87,21 @@ multilimpia:
   title: "multilimpia"
   paths: [
     "/Users/ealbertos/src/multilimpia"
+    "/Users/ealbertos/src/vivaresidencialsite"
+  ]
+"shopify-app":
+  title: "shopify-app"
+  paths: [
+    "/Users/ealbertos/src/shopify-app"
+    "/Users/ealbertos/src/embedded-app-example"
+  ]
+"espacios-ejecutivos":
+  title: "espacios-ejecutivos"
+  paths: [
+    "/Applications/MAMP/htdocs/espacios-ejecutivos"
+  ]
+vivaresidencialsite:
+  title: "vivaresidencialsite"
+  paths: [
+    "/Users/ealbertos/src/vivaresidencialsite"
   ]

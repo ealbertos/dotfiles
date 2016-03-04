@@ -18,9 +18,9 @@
   editor:
     invisibles: {}
     fontFamily: "menlo"
+    fontSize: 15
     showIndentGuide: true
     softWrap: true
-    fontSize: 15
   minimap:
     plugins:
       "git-diff": true
