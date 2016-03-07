@@ -1,31 +1,31 @@
 "*":
-  "exception-reporting":
-    userId: "3ef94604-3f0b-2bfd-260e-3a1e375c0185"
-  welcome:
-    showOnStartup: false
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
   core:
     audioBeep: false
-    excludeVcsIgnoredPaths: false
     disabledPackages: [
       "minimap"
       "minimap-git-diff"
       "background-tips"
     ]
+    excludeVcsIgnoredPaths: false
     themes: [
-      "one-dark-ui"
-      "atom-dark-fusion-syntax"
+      "seti-ui"
+      "seti-syntax"
     ]
   editor:
-    invisibles: {}
-    fontFamily: "menlo"
+    fontFamily: "input mono narrow"
     fontSize: 15
+    invisibles: {}
     showIndentGuide: true
     softWrap: true
+  "exception-reporting":
+    userId: "3ef94604-3f0b-2bfd-260e-3a1e375c0185"
+  "file-icons":
+    forceShow: true
   minimap:
     plugins:
       "git-diff": true
-  "autocomplete-plus":
-    backspaceTriggersAutocomplete: true
-  "file-icons":
-    forceShow: true
   "one-dark-ui": {}
+  welcome:
+    showOnStartup: false
