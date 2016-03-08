@@ -10,7 +10,7 @@
     ]
     excludeVcsIgnoredPaths: false
     themes: [
-      "seti-ui"
+      "one-dark-ui"
       "seti-syntax"
     ]
   editor:
@@ -23,9 +23,11 @@
     userId: "3ef94604-3f0b-2bfd-260e-3a1e375c0185"
   "file-icons":
     forceShow: true
+  "linter-erb": {}
   minimap:
     plugins:
       "git-diff": true
   "one-dark-ui": {}
+  "one-light-ui": {}
   welcome:
     showOnStartup: false
