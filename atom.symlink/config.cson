@@ -19,6 +19,7 @@
     invisibles: {}
     showIndentGuide: true
     softWrap: true
+  emmet: {}
   "exception-reporting":
     userId: "3ef94604-3f0b-2bfd-260e-3a1e375c0185"
   "file-icons":
