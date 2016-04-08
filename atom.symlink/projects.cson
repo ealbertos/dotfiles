@@ -105,3 +105,18 @@ vivaresidencialsite:
   paths: [
     "/Users/ealbertos/src/vivaresidencialsite"
   ]
+repssa:
+  title: "repssa"
+  paths: [
+    "/Users/ealbertos/src/repssa"
+  ]
+rentadoraisla:
+  title: "rentadoraisla"
+  paths: [
+    "/Users/ealbertos/src/rentadoraisla"
+  ]
+jrenvases:
+  title: "jrenvases"
+  paths: [
+    "/Users/ealbertos/src/jrenvases"
+  ]
