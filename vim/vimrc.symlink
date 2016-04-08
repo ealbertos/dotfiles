@@ -4,6 +4,9 @@ syntax on
 
 " Line number
 set number
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
+
 
 " Styles
 set t_Co=256
