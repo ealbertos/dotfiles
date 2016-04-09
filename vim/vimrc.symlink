@@ -4,14 +4,13 @@ syntax on
 
 " Line number
 set number
-:au FocusLost * :set number
-:au FocusGained * :set relativenumber
+set relativenumber
 
 
-" Styles
+" Styles and color
 set t_Co=256
-set guifont=Menlo:h15
-colorscheme Tomorrow-Night
+set guifont=input_mono_narrow:h15
+colorscheme seti
 set showmode
 let g:airline_theme='powerlineish'
 
@@ -27,6 +26,9 @@ set softtabstop=2
 
 " Show spaces in ruby syntax
 let ruby_space_errors=1
+
+"Plugins
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Key mapping
 inoremap jk <ESC>
