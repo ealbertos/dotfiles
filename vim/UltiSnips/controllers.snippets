@@ -1,0 +1,16 @@
+snippet controller "Create controller class"
+class ${1:Model}Controller < ApplicationController
+	before_filter :find_${2:model}
+
+	$0
+
+	${3:private
+  def ${4:model}_params
+    params.require(:${5:model}).permit(
+      :${6:attr_1}
+    )
+  end
+  }
+end
+endsnippet
+

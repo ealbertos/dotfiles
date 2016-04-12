@@ -2,6 +2,8 @@
 execute pathogen#infect()
 syntax on
 
+set tags+=.git/tags
+
 " Line number
 set number
 set relativenumber
@@ -32,7 +34,10 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Key mapping
 inoremap jk <ESC>
-let mapleader = "\<Space>"
+let mapleader = ","
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+let user_emmet_expandabbr_key ='<C-E>'

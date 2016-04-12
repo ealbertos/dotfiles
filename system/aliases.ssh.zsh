@@ -27,8 +27,11 @@ alias bunicorn='bundle exec unicorn -c config/unicorn.rb'
 alias binstall='bundle install'
 alias bupdate='bundle update'
 
-
 #Server alias
 alias centaurus="ssh root@centaurus.wearemonkeys.com"
 alias affenbits="ssh affenbit@affenbits.com"
 alias codn="ssh root@services.codnlabs.com"
+
+#Ctags
+alias ctags="/opt/boxen/homebrew/bin/ctags"
+alias createtags="ctags -R --exclude=.git --exclude=log *"

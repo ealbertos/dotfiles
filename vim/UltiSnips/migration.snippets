@@ -1,0 +1,78 @@
+snippet ct "create table" i
+create_table :${1:table_name} do |t|
+  t.${2:string} :${3:name}
+end
+endsnippet
+
+snippet ac "add column" i
+add_column :${1:table_name}, :${2:column_name}, :${3:type}
+endsnippet
+
+snippet tcbi "Create binary column"
+t.binary :${1:title}${2:, :limit => ${3:2}.megabytes}
+$0
+endsnippet
+
+snippet tb "Create boolean column"
+t.boolean :${1:title}
+$0
+endsnippet
+
+snippet td "Create date column"
+t.date :${1:title}
+$0
+endsnippet
+
+snippet tdt "Create datetime column"
+t.datetime :${1:title}
+$0
+endsnippet
+
+snippet tde "Create decimal column"
+t.decimal :${1:title}${2:${3:, :precision => ${4:10}}${5:, :scale => ${6:2}}}
+$0
+endsnippet
+
+snippet tf "Create float column"
+t.float :${1:title}
+$0
+endsnippet
+snippet ti "Create integer column"
+t.integer :${1:title}
+$0
+endsnippet
+
+snippet tcl "Create lock_version column"
+t.integer :lock_version, :null => false, :default => 0
+$0
+endsnippet
+
+snippet ts "Create string column"
+t.string :${1:title}
+$0
+endsnippet
+
+snippet tt "Create text column"
+t.text :${1:title}
+$0
+endsnippet
+
+snippet tcti "Create time column"
+t.time :${1:title}
+$0
+endsnippet
+
+snippet tts "Create timestamp column"
+t.timestamp :${1:title}
+$0
+endsnippet
+
+snippet ttss "Create timestamps columns"
+t.timestamps
+$0
+endsnippet
+
+snippet col "Migration Create Column (mcc)"
+t.column ${1:title}, :${2:string}
+$0
+endsnippet

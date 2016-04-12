@@ -1,0 +1,122 @@
+#Forms and inputs
+snippet	form_for " " i
+	<%= form_for ${1:model}s do |f| %>
+		<%= f.text_field :${2:field_1}, class: "${3:form-control}" %>
+		${3}
+	<% end %>
+endsnippet
+
+snippet	ff " " i
+	<%= f.fields_for ${1:model}s do |builder| %>
+		<%= render '${2:partial}', f: builder%>
+	<% end %>
+endsnippet
+
+snippet	fl " " i
+	<%= f.label :${1:field_1}, class: "${2:control-label}" %>
+endsnippet
+
+snippet	fl " " i
+	<%= f.label :${1:field_1}, class: "${2:control-label}" %>
+endsnippet
+
+snippet	ftf " " i
+	<%= f.text_field :${1:field_1}${2:, class: "${3:form-control}"} %>
+endsnippet
+
+snippet	ftf
+	<%= f.text_field :${1:field_1}${2:, class: "${3:form-control}"} %>
+endsnippet
+
+snippet fpf "password field" i
+	<%= f.password_field :${1:field_1}${2:, class: "${3:form-control}"} %> 
+endsnippet
+
+snippet fres "email field" i
+  <%= f.email_field :${1:field_1}${2:, class: "${3:form-control}"} %>
+endsnippet
+
+snippet fhf "hiddeh field" i
+  <%= f.hidden_field :${1:field_1}, value: "${2:true}" %>
+endsnippet
+
+snippet fnf "number" i
+  <%= f.number_field :${1:field_1}${2:, class: "${3:form-control}"} %>
+endsnippet
+
+snippet fta "text" i
+  <%= f.text_area :${1:field_1}${2:, class: "${3:form-control}"} %>
+endsnippet
+
+snippet fds "date select" i
+  <%= f.date_select :${1:field_1}, class: "${2:form-control}" %>
+endsnippet
+
+snippet fdts "date time select" i
+  f.datetime_select :${1:field_1}, class: "${2:form-control}" %>
+endsnippet
+
+snippet fcs "collection for slect" i
+<%= f.collection_select(
+  :${1:resource_id},
+  @${2:collection},
+  :${3:id},
+  :${4:name},
+  {
+    include_blank: "${5:Please select one}"
+  },
+  { class: "${6:form-control}" }
+) %> 
+endsnippet
+
+snippet fsf "select" i
+<%= f.select(
+  :${1:resource_id},
+  options_from_collection_for_select(
+    @${2:collection},
+    :${3:id},
+    :${4:name},
+    @${5:form_object}.$1
+  ),
+  {
+    include_blank: "${6:Please select one}"
+  },
+  { class: "${7:form-control}" }
+) %>
+endsnippet
+
+snippet st "select tag" i
+<%= select_tag(
+  :${1:color_id},
+  options_from_collection_for_select(
+    @${2:colors},
+    :${3:id},
+    :${4:name},
+    params[:$1]
+  ),
+  {
+    include_blank: "Please select one"
+  },
+  { class: "${5:form-control}" }
+) %> $0
+endsnippet
+
+snippet fcb "checkbox" i
+  <%= f.check_box :${1:method}, ${2:options}, ${3:true}, ${4:false} %>
+endsnippet
+
+snippet fff "file field" i
+  <%= f.file_field :${1:file}, accept: "${2:video/mp4}", class: "form-control" %>
+endsnippet
+
+snippet fs "submit field" i
+  <%= f.submit "${1:Save / Update}"${2:, class: "${3:btn btn-primary"}} %>$0
+endsnippet
+
+snippet sut "submit tag" i
+  <%= submit_tag "${1:Search!}"${2:, class: "${4:btn btn-${3:primary}}"} %>$0
+endsnippet
+
+snippet f "general field" i
+  <%= f.${1:text}_field :${2:field_1}${3:, class: "${4:form-control}"} %>$0
+endsnippet

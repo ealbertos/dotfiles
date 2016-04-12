@@ -1,42 +1,30 @@
+extends form, logger
+
 snippet rc
-	<% ${0} %>
+<% ${0} %>
 endsnippet
 snippet rce
-	<%= ${1} %>
+<%= ${1} %>
 endsnippet
 snippet %
-	<% ${0} %>
+<% ${0} %>
 endsnippet
 snippet =
-	<%= ${1} %>
+<%= ${1} %>
 endsnippet
 snippet end
-	<% end %>
+<% end %>
 endsnippet
 snippet ead
-	<% ${1}.each do |${2}| %>
-		${0}
-	<% end %>
+<% ${1}.each do |${2}| %>
+  ${0}
+<% end %>
 endsnippet
 snippet for
-	<% for ${2:item} in ${1} %>
-		${0}
-	<% end %>
+<% for ${2:item} in ${1} %>
+  ${0}
+<% end %>
 endsnippet
 snippet render
-	<%= render '${0:item}' %>
-endsnippet
-
-#Forms and inputs
-snippet	form_for
-	<%= form_for ${1:model}s do |f| %>
-		<%= f.text_field :${2:field_1}, class: "${3:form-control}" %>
-		${3}
-	<% end %>
-endsnippet
-
-snippet	ff
-	<%= f.fields_for ${1:model}s do |builder| %>
-		<%= render '${2:partial}', f: builder%>
-	<% end %>
+<%= render '${0:item}' %>
 endsnippet

@@ -1,3 +1,9 @@
 .DS_Store
 *~
 *.swp
+
+# Ignore tags created by etags and ctags
+TAGS
+!TAGS/
+tags
+!tags/
