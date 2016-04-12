@@ -1,6 +1,10 @@
 " Pathogen first
 execute pathogen#infect()
 syntax on
+set nocompatible      " We're running Vim, not Vi!
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
 
 set tags+=.git/tags
 
