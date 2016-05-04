@@ -93,7 +93,6 @@ multilimpia:
   title: "shopify-app"
   paths: [
     "/Users/ealbertos/src/shopify-app"
-    "/Users/ealbertos/src/embedded-app-example"
   ]
 "espacios-ejecutivos":
   title: "espacios-ejecutivos"
@@ -119,4 +118,14 @@ jrenvases:
   title: "jrenvases"
   paths: [
     "/Users/ealbertos/src/jrenvases"
+  ]
+iluminair:
+  title: "Iluminair"
+  paths: [
+    "/Users/ealbertos/src/iluminair"
+  ]
+isla:
+  title: "Isla"
+  paths: [
+    "/Users/ealbertos/src/isla"
   ]

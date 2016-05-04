@@ -1,2 +1,5 @@
 '.platform-darwin':
   'cmd-0': 'tree-view:toggle'
+
+'atom-text-editor:not([mini])':
+  'ctrl-shift-K': 'editor:delete-line'
