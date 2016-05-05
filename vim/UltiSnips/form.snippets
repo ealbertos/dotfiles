@@ -1,30 +1,22 @@
 #Forms and inputs
-snippet	form_for " " i
+snippet	form_for "form_for" i
 	<%= form_for ${1:model}s do |f| %>
 		<%= f.text_field :${2:field_1}, class: "${3:form-control}" %>
 		${3}
 	<% end %>
 endsnippet
 
-snippet	ff " " i
+snippet	ffo "fields_for" i
 	<%= f.fields_for ${1:model}s do |builder| %>
 		<%= render '${2:partial}', f: builder%>
 	<% end %>
 endsnippet
 
-snippet	fl " " i
+snippet	fl "label" i
 	<%= f.label :${1:field_1}, class: "${2:control-label}" %>
 endsnippet
 
-snippet	fl " " i
-	<%= f.label :${1:field_1}, class: "${2:control-label}" %>
-endsnippet
-
-snippet	ftf " " i
-	<%= f.text_field :${1:field_1}${2:, class: "${3:form-control}"} %>
-endsnippet
-
-snippet	ftf
+snippet	ftf "text_field" i
 	<%= f.text_field :${1:field_1}${2:, class: "${3:form-control}"} %>
 endsnippet
 
@@ -105,7 +97,7 @@ snippet fcb "checkbox" i
   <%= f.check_box :${1:method}, ${2:options}, ${3:true}, ${4:false} %>
 endsnippet
 
-snippet fff "file field" i
+snippet fil "file field" i
   <%= f.file_field :${1:file}, accept: "${2:video/mp4}", class: "form-control" %>
 endsnippet
 

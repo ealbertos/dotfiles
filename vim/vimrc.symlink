@@ -40,6 +40,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 inoremap jk <ESC>
 let mapleader = ","
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>. :CtrlPTag<cr>
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
