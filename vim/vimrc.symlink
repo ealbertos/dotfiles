@@ -42,6 +42,17 @@ let mapleader = ","
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>. :CtrlPTag<cr>
 
+"Mapping split view navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+:inoremap ( ()<Esc>i
+:inoremap { {}<Esc>i
+:inoremap [ []<Esc>i
+:inoremap " ""<Esc>i
+:inoremap ' ''<Esc>i
+
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
 

@@ -83,7 +83,7 @@ alias_attribute :${1:new_name}, :${2:old_name}$0
 endsnippet
 
 snippet hm "has_many" i
-has_many :${1:asoc_models}
+has_many :${1:asoc_models}, dependent: ${2:destroy}
 endsnippet
 
 snippet hmd "has many dependent" i
