@@ -41,6 +41,10 @@ inoremap jk <ESC>
 let mapleader = ","
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>. :CtrlPTag<cr>
+map <Leader>m :RTmodel
+map <Leader>c :Tcontroller
+map <Leader>v :Tview
+
 
 "Mapping split view navigation
 nnoremap <C-J> <C-W><C-J>
