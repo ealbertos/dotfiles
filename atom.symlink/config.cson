@@ -7,10 +7,15 @@
       "minimap"
       "minimap-git-diff"
       "background-tips"
+      "file-icons"
+      "symbols-view"
     ]
     excludeVcsIgnoredPaths: false
+    packagesWithKeymapsDisabled: [
+      "atom-ctags"
+    ]
     themes: [
-      "one-dark-ui"
+      "seti-ui"
       "seti-syntax"
     ]
   editor:
