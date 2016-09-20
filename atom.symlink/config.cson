@@ -7,7 +7,6 @@
       "minimap"
       "minimap-git-diff"
       "background-tips"
-      "file-icons"
       "symbols-view"
     ]
     excludeVcsIgnoredPaths: false
@@ -15,12 +14,12 @@
       "atom-ctags"
     ]
     themes: [
-      "seti-ui"
+      "one-dark-ui"
       "seti-syntax"
     ]
   editor:
     fontFamily: "input mono narrow"
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     showIndentGuide: true
     softWrap: true
@@ -34,7 +33,11 @@
   minimap:
     plugins:
       "git-diff": true
-  "one-dark-ui": {}
+  "one-dark-ui":
+    tabSizing: "Even"
   "one-light-ui": {}
+  "relative-numbers": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

@@ -129,3 +129,33 @@ isla:
   paths: [
     "/Users/ealbertos/src/isla"
   ]
+puntoa:
+  title: "Puntoa"
+  paths: [
+    "/Users/ealbertos/src/puntoa"
+  ]
+hemisferioderecho:
+  title: "Hemisferioderecho"
+  paths: [
+    "/Users/ealbertos/src/hemisferioderecho"
+  ]
+pcpdelsureste:
+  title: "Pcpdelsureste"
+  paths: [
+    "/Users/ealbertos/src/pcpdelsureste"
+  ]
+espacios:
+  title: "Espacios"
+  paths: [
+    "/Users/ealbertos/src/espacios"
+  ]
+cube:
+  title: "Cube"
+  paths: [
+    "/Applications/MAMP/htdocs/cube"
+  ]
+cube2:
+  title: "Cube 2"
+  paths: [
+    "/Applications/MAMP/htdocs/cube2"
+  ]
