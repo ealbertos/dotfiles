@@ -54,3 +54,6 @@ unset config_files
 # gpg agent
 GPG_TTY=$(tty)
 export GPG_TTY
+
+export RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init -)"

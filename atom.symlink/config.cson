@@ -13,6 +13,7 @@
     packagesWithKeymapsDisabled: [
       "atom-ctags"
     ]
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "seti-syntax"
