@@ -9,12 +9,6 @@ then
   alias la='gls -A --color'
 fi
 
-#System alias
-alias htdocs="cd /Applications/MAMP/htdocs"
-alias src="cd src"
-alias dropbox="bash HOME=$HOME/.dropbox-alt /Applications/Dropbox.app/Contents/MacOS/Dropbox &"
-alias gw="grunt watch"
-
 alias bunicorn='bundle exec unicorn -c config/unicorn.rb'
 alias binstall='bundle install'
 alias bupdate='bundle update'
