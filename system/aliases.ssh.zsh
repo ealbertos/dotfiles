@@ -18,6 +18,3 @@ alias gw="grunt watch"
 alias bunicorn='bundle exec unicorn -c config/unicorn.rb'
 alias binstall='bundle install'
 alias bupdate='bundle update'
-
-#Server alias
-alias codn="ssh root@services.codnlabs.com"
