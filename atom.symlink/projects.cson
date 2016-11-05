@@ -1,161 +1,202 @@
-andamios:
-  title: "andamios"
-  paths: [
-    "/Users/ealbertos/src/andamios"
-  ]
-jrenvases_system:
-  title: "jrenvases_system"
-  paths: [
-    "/Users/ealbertos/src/jrenvases_system"
-  ]
-upp:
-  title: "upp"
-  paths: [
-    "/Users/ealbertos/src/upp"
-  ]
-residencialaltabrisa:
-  title: "residencialaltabrisa"
-  paths: [
-    "/Applications/MAMP/htdocs/residencialaltabrisa"
-  ]
-cocos:
-  title: "cocos"
-  paths: [
-    "/Users/ealbertos/src/cocos"
-  ]
-candidatos:
-  title: "candidatos"
-  paths: [
-    "/Users/ealbertos/src/candidatos"
-  ]
-adminpanel:
-  title: "adminpanel"
-  paths: [
-    "/Users/ealbertos/src/adminpanel"
-  ]
-tacoarquitecturacontextual:
-  title: "tacoarquitecturacontextual"
-  paths: [
-    "/Users/ealbertos/src/tacoarquitecturacontextual"
-  ]
-concreplus:
-  title: "concreplus"
-  paths: [
-    "/Users/ealbertos/src/concreplus"
-  ]
-adoro:
-  title: "adoro"
-  paths: [
-    "/Users/ealbertos/src/adoro"
-  ]
-"adminpanel-test":
-  title: "adminpanel-test"
-  paths: [
-    "/Users/ealbertos/src/adminpanel-test"
-  ]
-kanankab:
-  title: "kanankab"
-  paths: [
-    "/Users/ealbertos/src/kanankab"
-  ]
-atlantes:
-  title: "atlantes"
-  paths: [
-    "/Users/ealbertos/src/atlantes"
-  ]
-procon:
-  title: "procon"
-  paths: [
-    "/Users/ealbertos/src/procon"
-  ]
-robotina:
-  title: "robotina"
-  paths: [
-    "/Users/ealbertos/src/robotina"
-  ]
-residencialaltabrisav2:
-  title: "residencial altabrisa v2"
-  paths: [
-    "/Applications/MAMP/htdocs/res_altabrisa"
-  ]
-our_website:
-  title: "our_website"
-  paths: [
-    "/Users/ealbertos/src/our_website"
-  ]
-multilimpia:
-  title: "multilimpia"
-  paths: [
-    "/Users/ealbertos/src/multilimpia"
-    "/Users/ealbertos/src/vivaresidencialsite"
-  ]
-"shopify-app":
-  title: "shopify-app"
-  paths: [
-    "/Users/ealbertos/src/shopify-app"
-  ]
-"espacios-ejecutivos":
-  title: "espacios-ejecutivos"
-  paths: [
-    "/Applications/MAMP/htdocs/espacios-ejecutivos"
-  ]
-vivaresidencialsite:
-  title: "vivaresidencialsite"
-  paths: [
-    "/Users/ealbertos/src/vivaresidencialsite"
-  ]
-repssa:
-  title: "repssa"
-  paths: [
-    "/Users/ealbertos/src/repssa"
-  ]
-rentadoraisla:
-  title: "rentadoraisla"
-  paths: [
-    "/Users/ealbertos/src/rentadoraisla"
-  ]
-jrenvases:
-  title: "jrenvases"
-  paths: [
-    "/Users/ealbertos/src/jrenvases"
-  ]
-iluminair:
-  title: "Iluminair"
-  paths: [
-    "/Users/ealbertos/src/iluminair"
-  ]
-isla:
-  title: "Isla"
-  paths: [
-    "/Users/ealbertos/src/isla"
-  ]
-puntoa:
-  title: "Puntoa"
-  paths: [
-    "/Users/ealbertos/src/puntoa"
-  ]
-hemisferioderecho:
-  title: "Hemisferioderecho"
-  paths: [
-    "/Users/ealbertos/src/hemisferioderecho"
-  ]
-pcpdelsureste:
-  title: "Pcpdelsureste"
-  paths: [
-    "/Users/ealbertos/src/pcpdelsureste"
-  ]
-espacios:
-  title: "Espacios"
-  paths: [
-    "/Users/ealbertos/src/espacios"
-  ]
-cube:
-  title: "Cube"
-  paths: [
-    "/Applications/MAMP/htdocs/cube"
-  ]
-cube2:
-  title: "Cube 2"
-  paths: [
-    "/Applications/MAMP/htdocs/cube2"
-  ]
+[
+  {
+    title: "andamios"
+    paths: [
+      "/Users/ealbertos/src/andamios"
+    ]
+  }
+  {
+    title: "jrenvases_system"
+    paths: [
+      "/Users/ealbertos/src/jrenvases_system"
+    ]
+  }
+  {
+    title: "upp"
+    paths: [
+      "/Users/ealbertos/src/upp"
+    ]
+  }
+  {
+    title: "residencialaltabrisa"
+    paths: [
+      "/Applications/MAMP/htdocs/residencialaltabrisa"
+    ]
+  }
+  {
+    title: "cocos"
+    paths: [
+      "/Users/ealbertos/src/cocos"
+    ]
+  }
+  {
+    title: "candidatos"
+    paths: [
+      "/Users/ealbertos/src/candidatos"
+    ]
+  }
+  {
+    title: "adminpanel"
+    paths: [
+      "/Users/ealbertos/src/adminpanel"
+    ]
+  }
+  {
+    title: "tacoarquitecturacontextual"
+    paths: [
+      "/Users/ealbertos/src/tacoarquitecturacontextual"
+    ]
+  }
+  {
+    title: "concreplus"
+    paths: [
+      "/Users/ealbertos/src/concreplus"
+    ]
+  }
+  {
+    title: "adoro"
+    paths: [
+      "/Users/ealbertos/src/adoro"
+    ]
+  }
+  {
+    title: "adminpanel-test"
+    paths: [
+      "/Users/ealbertos/src/adminpanel-test"
+    ]
+  }
+  {
+    title: "kanankab"
+    paths: [
+      "/Users/ealbertos/src/kanankab"
+    ]
+  }
+  {
+    title: "atlantes"
+    paths: [
+      "/Users/ealbertos/src/atlantes"
+    ]
+  }
+  {
+    title: "procon"
+    paths: [
+      "/Users/ealbertos/src/procon"
+    ]
+  }
+  {
+    title: "robotina"
+    paths: [
+      "/Users/ealbertos/src/robotina"
+    ]
+  }
+  {
+    title: "residencial altabrisa v2"
+    paths: [
+      "/Applications/MAMP/htdocs/res_altabrisa"
+    ]
+  }
+  {
+    title: "our_website"
+    paths: [
+      "/Users/ealbertos/src/our_website"
+    ]
+  }
+  {
+    title: "multilimpia"
+    paths: [
+      "/Users/ealbertos/src/multilimpia"
+      "/Users/ealbertos/src/vivaresidencialsite"
+    ]
+  }
+  {
+    title: "shopify-app"
+    paths: [
+      "/Users/ealbertos/src/shopify-app"
+    ]
+  }
+  {
+    title: "espacios-ejecutivos"
+    paths: [
+      "/Applications/MAMP/htdocs/espacios-ejecutivos"
+    ]
+  }
+  {
+    title: "vivaresidencialsite"
+    paths: [
+      "/Users/ealbertos/src/vivaresidencialsite"
+    ]
+  }
+  {
+    title: "repssa"
+    paths: [
+      "/Users/ealbertos/src/repssa"
+    ]
+  }
+  {
+    title: "rentadoraisla"
+    paths: [
+      "/Users/ealbertos/src/rentadoraisla"
+    ]
+  }
+  {
+    title: "jrenvases"
+    paths: [
+      "/Users/ealbertos/src/jrenvases"
+    ]
+  }
+  {
+    title: "Iluminair"
+    paths: [
+      "/Users/ealbertos/src/iluminair"
+    ]
+  }
+  {
+    title: "Isla"
+    paths: [
+      "/Users/ealbertos/src/isla"
+    ]
+  }
+  {
+    title: "Puntoa"
+    paths: [
+      "/Users/ealbertos/src/puntoa"
+    ]
+  }
+  {
+    title: "Hemisferioderecho"
+    paths: [
+      "/Users/ealbertos/src/hemisferioderecho"
+    ]
+  }
+  {
+    title: "Pcpdelsureste"
+    paths: [
+      "/Users/ealbertos/src/pcpdelsureste"
+    ]
+  }
+  {
+    title: "Espacios"
+    paths: [
+      "/Users/ealbertos/src/espacios"
+    ]
+  }
+  {
+    title: "Cube"
+    paths: [
+      "/Applications/MAMP/htdocs/cube"
+    ]
+  }
+  {
+    title: "Cube 2"
+    paths: [
+      "/Applications/MAMP/htdocs/cube2"
+    ]
+  }
+  {
+    title: "Compas Paddle"
+    paths: [
+      "/Users/ealbertos/src/compas-paddle"
+    ]
+    devMode: true
+  }
+]
