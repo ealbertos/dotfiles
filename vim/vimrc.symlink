@@ -16,7 +16,6 @@ set relativenumber
 " Styles and color
 set t_Co=256
 set guifont=input_mono_narrow:h15
-colorscheme seti
 set showmode
 let g:airline_theme='powerlineish'
 
