@@ -199,4 +199,11 @@
     ]
     devMode: true
   }
+  {
+    title: "Cecip"
+    group: "php"
+    paths: [
+      "/Applications/MAMP/htdocs/CECIP"
+    ]
+  }
 ]
