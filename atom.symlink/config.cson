@@ -1,4 +1,17 @@
 "*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#225c9c"
+      predefinedColor: "Blue"
+    tabs:
+      compactTabs: true
+      noTabMinWidth: true
+    treeView:
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
+      panelShadows: true
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
   core:
@@ -15,8 +28,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "seti-syntax"
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
   editor:
     fontFamily: "input mono narrow"

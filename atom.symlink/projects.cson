@@ -18,12 +18,6 @@
     ]
   }
   {
-    title: "residencialaltabrisa"
-    paths: [
-      "/Applications/MAMP/htdocs/residencialaltabrisa"
-    ]
-  }
-  {
     title: "cocos"
     paths: [
       "/Users/ealbertos/src/cocos"
@@ -87,12 +81,6 @@
     title: "robotina"
     paths: [
       "/Users/ealbertos/src/robotina"
-    ]
-  }
-  {
-    title: "residencial altabrisa v2"
-    paths: [
-      "/Applications/MAMP/htdocs/res_altabrisa"
     ]
   }
   {
