@@ -84,7 +84,7 @@
     ]
   }
   {
-    title: "our_website"
+    title: "CoDN Website"
     paths: [
       "/Users/ealbertos/src/our_website"
     ]
@@ -100,12 +100,6 @@
     title: "shopify-app"
     paths: [
       "/Users/ealbertos/src/shopify-app"
-    ]
-  }
-  {
-    title: "espacios-ejecutivos"
-    paths: [
-      "/Applications/MAMP/htdocs/espacios-ejecutivos"
     ]
   }
   {
@@ -169,18 +163,6 @@
     ]
   }
   {
-    title: "Cube"
-    paths: [
-      "/Applications/MAMP/htdocs/cube"
-    ]
-  }
-  {
-    title: "Cube 2"
-    paths: [
-      "/Applications/MAMP/htdocs/cube2"
-    ]
-  }
-  {
     title: "Compas Paddle"
     paths: [
       "/Users/ealbertos/src/compas-paddle"
@@ -192,6 +174,54 @@
     group: "php"
     paths: [
       "/Applications/MAMP/htdocs/CECIP"
+    ]
+  }
+  {
+    title: "Landing Trip Like Us"
+    paths: [
+      "/Users/ealbertos/src/trip-like-us-landing"
+    ]
+  }
+  {
+    title: "Ditoledo"
+    paths: [
+      "/Users/ealbertos/src/ditoledo"
+    ]
+  }
+  {
+    title: "Trip Like Us"
+    paths: [
+      "/Users/ealbertos/src/trip-like-us"
+    ]
+  }
+  {
+    title: "Observatorio Costero"
+    paths: [
+      "/Users/ealbertos/src/observatorio-costero"
+    ]
+  }
+  {
+    title: "Lua"
+    paths: [
+      "/Users/ealbertos/src/lua"
+    ]
+  }
+  {
+    title: "Mafra"
+    paths: [
+      "/Users/ealbertos/src/mafra"
+    ]
+  }
+  {
+    title: "Mi Otra Mitad"
+    paths: [
+      "/Users/ealbertos/src/mi-otra-mitad"
+    ]
+  }
+  {
+    title: "Humanimals"
+    paths: [
+      "/Users/ealbertos/src/humanimals"
     ]
   }
 ]

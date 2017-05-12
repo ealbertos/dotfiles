@@ -9,6 +9,20 @@ then
   alias la='gls -A --color'
 fi
 
-alias bunicorn='bundle exec unicorn -c config/unicorn.rb'
-alias binstall='bundle install'
-alias bupdate='bundle update'
+alias bun='bundle exec unicorn -c config/unicorn.rb'
+alias bui='bundle install'
+alias buu='bundle update'
+
+# adminpanel
+alias aduser='bundle exec rake adminpanel:user'
+alias adresource='rails g adminpanel:resource'
+alias adgallery='rails g adminpanel:gallery'
+alias admig='rails g adminpanel:migration'
+
+# rake
+alias rakemig='rake db:migrate'
+alias rakeset='rake db:setup'
+alias rakeseed='rake db:migrate'
+
+#random
+alias bo="boom"

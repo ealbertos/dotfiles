@@ -1,7 +1,8 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#225c9c"
+      abaseColor: "#176eb4"
+      genAccent: true
       predefinedColor: "Blue"
     tabs:
       compactTabs: true
@@ -35,7 +36,6 @@
     fontFamily: "input mono narrow"
     fontSize: 16
     invisibles: {}
-    showIndentGuide: true
     softWrap: true
     softWrapAtPreferredLineLength: true
   emmet: {}
@@ -44,6 +44,8 @@
   "file-icons":
     forceShow: true
   "linter-erb": {}
+  "linter-ui-default":
+    showPanel: true
   minimap:
     plugins:
       "git-diff": true
