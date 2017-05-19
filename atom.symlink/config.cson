@@ -2,6 +2,7 @@
   "atom-material-ui":
     colors:
       abaseColor: "#176eb4"
+      accentColor: "#e16603"
       genAccent: true
       predefinedColor: "Blue"
     tabs:
@@ -13,6 +14,7 @@
       animations: false
       panelContrast: true
       panelShadows: true
+      useAnimations: false
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
   core:
@@ -44,8 +46,7 @@
   "file-icons":
     forceShow: true
   "linter-erb": {}
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   minimap:
     plugins:
       "git-diff": true
