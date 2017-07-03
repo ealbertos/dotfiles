@@ -1,8 +1,9 @@
 "*":
+  "advanced-open-file": {}
   "atom-material-ui":
     colors:
-      abaseColor: "#176eb4"
-      accentColor: "#e16603"
+      abaseColor: "#04508d"
+      accentColor: "#aa4c00"
       genAccent: true
       predefinedColor: "Blue"
     tabs:
@@ -45,8 +46,14 @@
     userId: "3ef94604-3f0b-2bfd-260e-3a1e375c0185"
   "file-icons":
     forceShow: true
+  linter:
+    lintOnChange: false
+    lintOnOpen: false
+    lintPreviewTabs: false
   "linter-erb": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 60
+    showPanel: true
   minimap:
     plugins:
       "git-diff": true

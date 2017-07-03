@@ -6,3 +6,6 @@
 
 '.platform-darwin atom-text-editor':
   'ctrl-+': 'atom-ctags:go-to-declaration'
+
+'.workspace':
+  'ctrl-8': 'github:toggle-github-tab'
