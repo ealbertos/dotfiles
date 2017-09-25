@@ -224,4 +224,28 @@
       "/Users/ealbertos/src/humanimals"
     ]
   }
+  {
+    title: "Habla con Ella"
+    paths: [
+      "/Users/ealbertos/src/merida-escucha"
+    ]
+  }
+  {
+    title: "Ella Y Yo"
+    paths: [
+      "/Users/ealbertos/src/ella-y-yo"
+    ]
+  }
+  {
+    title: "Santa Rita"
+    paths: [
+      "/Users/ealbertos/src/santa-rita"
+    ]
+  }
+  {
+    title: "Harmonia"
+    paths: [
+      "/Users/ealbertos/src/harmonia"
+    ]
+  }
 ]

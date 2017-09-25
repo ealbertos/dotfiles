@@ -1,67 +1,32 @@
 "*":
-  "advanced-open-file": {}
   "atom-material-ui":
     colors:
-      abaseColor: "#04508d"
-      accentColor: "#aa4c00"
-      genAccent: true
-      predefinedColor: "Blue"
+      abaseColor: "#175bd2"
+      paintCursor: true
     tabs:
       compactTabs: true
-      noTabMinWidth: true
-    treeView:
-      compactList: true
     ui:
-      animations: false
       panelContrast: true
       panelShadows: true
       useAnimations: false
-  "autocomplete-plus":
-    backspaceTriggersAutocomplete: true
   core:
-    audioBeep: false
-    disabledPackages: [
-      "minimap"
-      "minimap-git-diff"
-      "background-tips"
-      "symbols-view"
-    ]
-    excludeVcsIgnoredPaths: false
-    packagesWithKeymapsDisabled: [
-      "atom-ctags"
-    ]
     telemetryConsent: "no"
     themes: [
-      "atom-material-ui"
+      "one-dark-ui"
       "atom-material-syntax"
     ]
   editor:
-    fontFamily: "input mono narrow"
     fontSize: 16
-    invisibles: {}
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-  emmet: {}
   "exception-reporting":
-    userId: "3ef94604-3f0b-2bfd-260e-3a1e375c0185"
-  "file-icons":
-    forceShow: true
-  linter:
-    lintOnChange: false
-    lintOnOpen: false
-    lintPreviewTabs: false
-  "linter-erb": {}
+    userId: "c0e70ccd-6263-4e76-825a-3c7955807bd2"
   "linter-ui-default":
     panelHeight: 60
-    showPanel: true
-  minimap:
-    plugins:
-      "git-diff": true
-  "one-dark-ui":
-    tabSizing: "Even"
-  "one-light-ui": {}
-  "relative-numbers": {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "native-ui":
+    tabs: {}
+    ui: {}
+  "seti-ui":
+    compactView: true
+    fileIcons: false
+    themeColor: "Steel"
   welcome:
     showOnStartup: false
