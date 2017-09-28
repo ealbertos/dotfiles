@@ -1,0 +1,48 @@
+tap 'homebrew/core'
+tap 'homebrew/versions'
+tap 'homebrew/bundle'
+tap 'homebrew/services'
+tap 'github/bootstrap'
+tap 'caskroom/cask'
+
+brew 'autoconf'
+brew 'libpng'
+brew 'freetype'
+brew 'jpeg'
+brew 'libtiff'
+brew 'libtool'
+brew 'graphicsmagick'
+brew 'xz'
+brew 'imagemagick'
+brew 'launch_socket_server', restart_service: true
+brew 'launchdns', restart_service: true
+brew 'openssl'
+brew 'mysql', restart_service: true
+brew 'openssl@1.1'
+brew 'pcre'
+brew 'nginx', restart_service: true
+brew 'node'
+brew 'pkg-config'
+brew 'readline'
+brew 'postgresql', restart_service: true
+brew 'ruby-build'
+brew 'rbenv'
+brew 'redis'
+
+cask_args appdir: '/Applications'
+
+cask 'atom'
+cask 'basecamp'
+cask 'flux'
+cask 'firefox'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'postico'
+cask 'quitter'
+cask 'sequel-pro'
+cask 'slack'
+cask 'spectacle'
+cask 'spotify'
+cask 'spotify-notifications'
+cask 'vlc'
+cask 'whatsapp'
