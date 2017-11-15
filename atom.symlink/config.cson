@@ -13,14 +13,15 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "atom-material-syntax"
+      "my-chester-syntax"
     ]
   editor:
-    fontSize: 16
+    fontFamily: "Fira Code"
+    fontSize: 17
   "exception-reporting":
     userId: "c0e70ccd-6263-4e76-825a-3c7955807bd2"
   "linter-ui-default":
-    panelHeight: 60
+    showPanel: true
   "native-ui":
     tabs: {}
     ui: {}
