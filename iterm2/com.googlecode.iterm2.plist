@@ -699,11 +699,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>183 304 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>437 544 796 473 0 0 1920 1058 </string>
+	<string>742 289 796 473 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>235 0 1450 1058 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>286 7 1370 1035 0 0 1920 1058 </string>
+	<string>286 0 1450 1058 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>235 14 1450 1035 0 0 1920 1058 </string>
 	<key>New Bookmarks</key>
@@ -759,11 +759,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40436822175979614</real>
+				<real>0.24705882352941178</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.89646857976913452</real>
+				<real>0.78431372549019607</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -776,9 +776,9 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.44485551118850708</real>
+				<real>0.44313725490196076</real>
 				<key>Red Component</key>
-				<real>0.40937519073486328</real>
+				<real>0.40784313725490196</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -798,13 +798,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.877105712890625</real>
+				<real>0.7803921568627451</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.76428019657748936</real>
+				<real>0.77254901960784317</real>
 				<key>Red Component</key>
-				<real>0.27057565608993173</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -915,11 +915,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40569943189620972</real>
+				<real>0.2132110595703125</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.43035173416137695</real>
+				<real>0.22805613391804302</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -2402,7 +2402,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-27T23:53:25Z</date>
+	<date>2017-11-14T15:12:31Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2446,7 +2446,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.1.3</string>
+	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
