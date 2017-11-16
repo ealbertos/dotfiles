@@ -20,8 +20,7 @@
     fontSize: 17
   "exception-reporting":
     userId: "c0e70ccd-6263-4e76-825a-3c7955807bd2"
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "native-ui":
     tabs: {}
     ui: {}
