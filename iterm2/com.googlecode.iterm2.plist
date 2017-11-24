@@ -699,9 +699,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>183 304 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>478 418 796 473 0 0 1920 1058 </string>
+	<string>98 413 918 452 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1280 280 1280 778 -1280 280 1280 778 </string>
+	<string>0 23 1280 755 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>286 0 1450 1058 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -932,13 +932,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14215520024299622</real>
+				<real>0.06402587890625</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14215520024299622</real>
+				<real>0.06402587890625</real>
 				<key>Red Component</key>
-				<real>0.14422607421875</real>
+				<real>0.06402587890625</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<true/>
@@ -966,7 +966,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>1.7579280138015747</real>
+			<real>3.1654192891822861</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1048,13 +1048,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78104829788208008</real>
+				<real>0.802886962890625</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.78105825185775757</real>
+				<real>0.802886962890625</real>
 				<key>Red Component</key>
-				<real>0.7810397744178772</real>
+				<real>0.802886962890625</real>
 			</dict>
 			<key>Guid</key>
 			<string>335D15D8-F817-410A-8590-913F4FD2B8AE</string>
@@ -1383,6 +1383,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>Inconsolata 16</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1537,12 +1539,25 @@
 			</array>
 			<key>Sync Title</key>
 			<false/>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.16563107818365097</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.16563107818365097</real>
+				<key>Red Component</key>
+				<real>0.76788330078125</real>
+			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.14060418307781219</real>
+			<real>0.08053815038071066</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1555,6 +1570,8 @@
 			<false/>
 			<key>Use Italic Font</key>
 			<true/>
+			<key>Use Tab Color</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -1657,7 +1674,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-16T00:58:18Z</date>
+	<date>2017-11-24T16:07:01Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
