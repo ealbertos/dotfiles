@@ -698,12 +698,14 @@
 	<string>620 174 953 411 0 0 1920 1058 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>183 304 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>98 413 918 452 0 0 1920 1058 </string>
+	<string>-1238 548 770 429 -1280 280 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 23 1280 755 0 0 1280 778 </string>
+	<string>-1280 280 1280 778 -1280 280 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>286 0 1450 1058 0 0 1920 1058 </string>
+	<string>-1280 280 1280 778 -1280 280 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>235 14 1450 1035 0 0 1920 1058 </string>
 	<key>New Bookmarks</key>
@@ -932,13 +934,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.06402587890625</real>
+				<real>0.098663330078125</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.06402587890625</real>
+				<real>0.098663330078125</real>
 				<key>Red Component</key>
-				<real>0.06402587890625</real>
+				<real>0.098663330078125</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<true/>
@@ -1392,7 +1394,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>60</integer>
+			<integer>80</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -1557,7 +1559,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.08053815038071066</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1674,11 +1676,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-24T16:07:01Z</date>
+	<date>2018-01-15T15:14:29Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -1717,6 +1721,8 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>

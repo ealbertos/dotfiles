@@ -254,4 +254,52 @@
       "/Users/ealbertos/github/my-chester-syntax"
     ]
   }
+  {
+    title: "Eaab Bowling"
+    paths: [
+      "/Users/ealbertos/src/eaab_bowling"
+    ]
+  }
+  {
+    title: "Hidrotanques"
+    paths: [
+      "/Users/ealbertos/src/hidrotanques"
+    ]
+  }
+  {
+    title: "Keken"
+    paths: [
+      "/Users/ealbertos/src/keken"
+    ]
+  }
+  {
+    title: "Purple"
+    paths: [
+      "/Users/ealbertos/src/purple"
+    ]
+  }
+  {
+    title: "Sport Bowl"
+    paths: [
+      "/Users/ealbertos/src/sport-bowl"
+    ]
+  }
+  {
+    title: "Zaso"
+    paths: [
+      "/Users/ealbertos/src/zaso"
+    ]
+  }
+  {
+    title: "Unam Inventory"
+    paths: [
+      "/Users/ealbertos/src/unam_inventory"
+    ]
+  }
+  {
+    title: "Unam Inventory Ios"
+    paths: [
+      "/Users/ealbertos/src/unam_inventory_ios"
+    ]
+  }
 ]
