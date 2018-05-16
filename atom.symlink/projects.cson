@@ -302,4 +302,22 @@
       "/Users/ealbertos/src/unam_inventory_ios"
     ]
   }
+  {
+    title: "Mujeres Con Vila"
+    paths: [
+      "/Users/ealbertos/src/mujeres-con-vila"
+    ]
+  }
+  {
+    title: "Ordinum Mx"
+    paths: [
+      "/Users/ealbertos/src/ordinum.mx"
+    ]
+  }
+  {
+    title: "Casa De La Playa"
+    paths: [
+      "/Users/ealbertos/src/casa-de-la-playa"
+    ]
+  }
 ]

@@ -18,6 +18,7 @@
   editor:
     fontFamily: "Fira Code"
     fontSize: 17
+    softWrap: true
   "exception-reporting":
     userId: "c0e70ccd-6263-4e76-825a-3c7955807bd2"
   "linter-ui-default": {}
@@ -28,5 +29,7 @@
     compactView: true
     fileIcons: false
     themeColor: "Steel"
+  "tree-view":
+    alwaysOpenExisting: true
   welcome:
     showOnStartup: false
