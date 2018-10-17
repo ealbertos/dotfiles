@@ -320,4 +320,40 @@
       "/Users/ealbertos/src/casa-de-la-playa"
     ]
   }
+  {
+    title: "County Webcrawler"
+    paths: [
+      "/Users/ealbertos/src/county_webcrawler"
+    ]
+  }
+  {
+    title: "Lurecosmetics Theme"
+    paths: [
+      "/Users/ealbertos/src/theme_export__lurecosmetics-com-copy-of-testament"
+    ]
+  }
+  {
+    title: "Merida Respira web"
+    paths: [
+      "/Users/ealbertos/src/merida-respira"
+    ]
+  }
+  {
+    title: "Luana"
+    paths: [
+      "/Users/ealbertos/src/luana"
+    ]
+  }
+  {
+    title: "Qual Ai"
+    paths: [
+      "/Users/ealbertos/src/qual.ai"
+    ]
+  }
+  {
+    title: "Openvoters"
+    paths: [
+      "/Users/ealbertos/src/openvoters"
+    ]
+  }
 ]

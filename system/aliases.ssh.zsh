@@ -9,9 +9,9 @@ then
   alias la='gls -A --color'
 fi
 
-alias bun='bundle exec unicorn -c config/unicorn.rb'
-alias bui='bundle install'
-alias buu='bundle update'
+alias bunicorn='bundle exec unicorn -c config/unicorn.rb --no-default-middleware'
+alias binstall='bundle install'
+alias bupdate='bundle update'
 alias bukey='OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES bundle exec unicorn -c config/unicorn.rb'
 
 # adminpanel

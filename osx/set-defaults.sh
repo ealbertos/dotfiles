@@ -7,9 +7,6 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
-# Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
-
 # Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
@@ -19,20 +16,20 @@ defaults write com.apple.Finder FXPreferredViewStyle clmv
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
-# Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain "InitialKeyRepeat_Level_Saved" -int 4
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
-
-# Set the Finder prefs for showing a few different volumes on the Desktop.
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+###############################################################################
+# Safari & WebKit                                                             #
+###############################################################################
 
 # Set up Safari for development.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
+###############################################################################
+
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Trackpad: enable tap to click for this user and for the login screen
@@ -48,8 +45,17 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-# Keep folders on top when sorting by name
-defaults write com.apple.finder _FXSortFoldersFirst -bool true
+# Disable press-and-hold for keys in favor of key repeat.
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Set a really fast key repeat.
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain "InitialKeyRepeat_Level_Saved" -int 4
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
 
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -63,9 +69,23 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
 # Avoid creating .DS_Store files on network or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Set the Finder prefs for showing a few different volumes on the Desktop.
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+###############################################################################
+# Dock, Dashboard, and hot corners                                            #
+###############################################################################
 
 # Hot corners
 # Possible values:
@@ -95,6 +115,10 @@ defaults write com.apple.TextEdit RichText -int 0
 
 # Use the system-native print preview dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
+
+###############################################################################
+# Spectacle.app                                                               #
+###############################################################################
 
 # Set up my preferred keyboard shortcuts for Spectacle
 cp -r system/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
