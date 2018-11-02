@@ -7,12 +7,6 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
-# Use AirDrop over every interface. srsly this should be a default.
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-
-# Always open everything in Finder's column view. This is important.
-defaults write com.apple.Finder FXPreferredViewStyle clmv
-
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
@@ -67,7 +61,8 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+#Change this to true when mojave finaly works, to show path in window bar not in tab
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
 
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -82,6 +77,12 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# Use AirDrop over every interface. srsly this should be a default.
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+
+# Always open everything in Finder's column view. This is important.
+defaults write com.apple.Finder FXPreferredViewStyle clmv
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #

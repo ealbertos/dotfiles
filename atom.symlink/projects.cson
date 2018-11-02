@@ -356,4 +356,16 @@
       "/Users/ealbertos/src/openvoters"
     ]
   }
+  {
+    title: "Mexican Invoice"
+    paths: [
+      "/Users/ealbertos/src/mexican_invoice"
+    ]
+  }
+  {
+    title: "Abimerhi Premier"
+    paths: [
+      "/Users/ealbertos/src/abimerhi-premier"
+    ]
+  }
 ]

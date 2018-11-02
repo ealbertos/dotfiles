@@ -13,6 +13,7 @@ alias bunicorn='bundle exec unicorn -c config/unicorn.rb --no-default-middleware
 alias binstall='bundle install'
 alias bupdate='bundle update'
 alias bukey='OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES bundle exec unicorn -c config/unicorn.rb'
+alias bsidekiq='bundle exec sidekiq'
 
 # adminpanel
 alias aduser='bundle exec rake adminpanel:user'
