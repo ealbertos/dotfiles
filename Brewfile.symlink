@@ -1,48 +1,43 @@
-tap 'homebrew/core'
-tap 'homebrew/versions'
-tap 'homebrew/bundle'
-tap 'homebrew/services'
-tap 'github/bootstrap'
-tap 'caskroom/cask'
+tap "github/bootstrap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
 
-brew 'autoconf'
-brew 'libpng'
-brew 'freetype'
-brew 'jpeg'
-brew 'libtiff'
-brew 'libtool'
-brew 'graphicsmagick'
-brew 'xz'
-brew 'imagemagick'
-brew 'launch_socket_server', restart_service: true
-brew 'launchdns', restart_service: true
-brew 'openssl'
-brew 'mysql', restart_service: true
-brew 'openssl@1.1'
-brew 'pcre'
-brew 'nginx', restart_service: true
-brew 'node'
-brew 'pkg-config'
-brew 'readline'
-brew 'postgresql', restart_service: true
-brew 'ruby-build'
-brew 'rbenv'
-brew 'redis'
+brew "autoconf"
+brew "libpng"
+brew "freetype"
+brew "jpeg"
+brew "libtiff"
+brew "libtool"
+brew "graphicsmagick"
+brew "xz"
+brew "imagemagick"
+brew "launch_socket_server", restart_service: true
+brew "launchdns", restart_service: true
+brew "openssl"
+brew "mysql", restart_service: true
+brew "pcre"
+brew "nginx", restart_service: true
+brew "node"
+brew "openssl@1.1"
+brew "pkg-config"
+brew "readline"
+brew "postgresql", restart_service: true
+brew "ruby-build"
+brew "rbenv"
+brew "redis"
+brew "zsh"
+brew "zsh-completions"
 
-cask_args appdir: '/Applications'
-
-cask 'atom'
-cask 'basecamp'
-cask 'flux'
-cask 'firefox'
-cask 'google-chrome'
-cask 'iterm2'
-cask 'postico'
-cask 'quitter'
-cask 'sequel-pro'
-cask 'slack'
-cask 'spectacle'
-cask 'spotify'
-cask 'spotify-notifications'
-cask 'vlc'
-cask 'whatsapp'
+cask "atom"
+cask "appcleaner"
+cask "calibre"
+cask "firefox"
+cask "google-chrome"
+cask "postico"
+cask "quitter"
+cask "sequel-pro"
+cask "spotify"
+cask "spotify-notifications"
+cask "vlc"
