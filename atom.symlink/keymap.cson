@@ -8,4 +8,7 @@
   'ctrl-+': 'atom-ctags:go-to-declaration'
 
 '.workspace':
-  'ctrl-8': 'github:toggle-github-tab'
+  'ctrl-8': 'github:toggle-git-tab'
+
+'atom-text-editor':
+  'ctrl-shift-m': 'markdown-preview:toggle'

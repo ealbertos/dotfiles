@@ -11,10 +11,8 @@ export PROJECTS=~/src
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
-if [[ -a ~/.localrc ]]
-then
-  source ~/.localrc
-fi
+
+source ~/.localrc
 
 # all of our zsh files
 typeset -U config_files
@@ -58,3 +56,7 @@ export GPG_TTY
 
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

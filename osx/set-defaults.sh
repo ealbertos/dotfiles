@@ -10,6 +10,9 @@
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
+# Don’t show recent applications in Dock
+	defaults write com.apple.dock show-recents -bool false
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
@@ -83,6 +86,9 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 # Always open everything in Finder's column view. This is important.
 defaults write com.apple.Finder FXPreferredViewStyle clmv
+
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #

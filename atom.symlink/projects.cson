@@ -368,4 +368,40 @@
       "/Users/ealbertos/src/abimerhi-premier"
     ]
   }
+  {
+    title: "Espacios Ejecutivos Rails"
+    paths: [
+      "/Users/ealbertos/src/espacios-ejecutivos-rails"
+    ]
+  }
+  {
+    title: "Applicantlab"
+    paths: [
+      "/Users/ealbertos/src/applicantlab"
+    ]
+  }
+  {
+    title: "Svacademy"
+    paths: [
+      "/Users/ealbertos/src/svacademy"
+    ]
+  }
+  {
+    title: "Manifestly"
+    paths: [
+      "/Users/ealbertos/src/manifestly"
+    ]
+  }
+  {
+    title: "Msb"
+    paths: [
+      "/Users/ealbertos/src/msb"
+    ]
+  }
+  {
+    title: "Legalmonster"
+    paths: [
+      "/Users/ealbertos/src/legalmonster"
+    ]
+  }
 ]
