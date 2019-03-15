@@ -404,4 +404,16 @@
       "/Users/ealbertos/src/legalmonster"
     ]
   }
+  {
+    title: "Rails Snippets"
+    paths: [
+      "/Users/ealbertos/src/rails-snippets"
+    ]
+  }
+  {
+    title: "Rails Snippets"
+    paths: [
+      "/Users/ealbertos/github/rails-snippets"
+    ]
+  }
 ]

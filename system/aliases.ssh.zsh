@@ -29,5 +29,5 @@ alias rakeseed='rake db:migrate'
 #random
 alias bo="boom"
 alias weather='curl wttr.in/Merida?format="%l:+%c+%t"'
-alias google3="open -a 'Google Chrome' --args 'https://localhost:3000 '"
-alias google5="open -a 'Google Chrome' --args 'https://localhost:5000 '"
+alias google3="open -a 'Google Chrome' --args 'http://localhost:3000 '"
+alias google5="open -a 'Google Chrome' --args 'http://localhost:5000 '"
