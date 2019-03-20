@@ -12,7 +12,7 @@
   "bracket-matcher":
     highlightMatchingLineNumber: true
   "city-lights-ui":
-    fontSize: 12
+    fontSize: 13
   core:
     closeDeletedFileTabs: true
     disabledPackages: [
@@ -21,7 +21,7 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
+      "city-lights-ui"
       "my-chester-syntax"
     ]
   "dash-ui":
@@ -29,7 +29,7 @@
     themeColor: "Indigo"
   editor:
     fontFamily: "Fira Code"
-    fontSize: 17
+    fontSize: 16
   "exception-reporting":
     userId: "c0e70ccd-6263-4e76-825a-3c7955807bd2"
   "linter-ui-default": {}
@@ -47,6 +47,9 @@
     compactView: true
     fileIcons: false
     themeColor: "Steel"
+  tabs:
+    addNewTabsAtEnd: true
+    usePreviewTabs: false
   "tree-view":
     alwaysOpenExisting: true
   welcome:
