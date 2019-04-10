@@ -1,10 +1,11 @@
 tap "github/bootstrap"
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-
 brew "autoconf"
+brew "ecm"
 brew "libpng"
 brew "freetype"
 brew "jpeg"
@@ -12,9 +13,11 @@ brew "libtiff"
 brew "libtool"
 brew "graphicsmagick"
 brew "xz"
-brew "imagemagick"
+brew "imagemagick", link: false
+brew "imagemagick@6", link: true
 brew "launch_socket_server", restart_service: true
 brew "launchdns", restart_service: true
+brew "libmaxminddb"
 brew "openssl"
 brew "mysql", restart_service: true
 brew "pcre"
@@ -22,22 +25,25 @@ brew "nginx", restart_service: true
 brew "node"
 brew "openssl@1.1"
 brew "pkg-config"
-brew "readline"
+brew "readline", link: true
 brew "postgresql", restart_service: true
+brew "postgresql@10"
 brew "ruby-build"
 brew "rbenv"
-brew "redis"
+brew "redis", restart_service: true
+brew "sqlite"
+brew "yarn"
 brew "zsh"
 brew "zsh-completions"
-
+brew "heroku/brew/heroku"
 cask "atom"
-cask "appcleaner"
-cask "calibre"
 cask "firefox"
 cask "google-chrome"
+cask "keepingyouawake"
+cask "ngrok"
 cask "postico"
 cask "quitter"
 cask "sequel-pro"
-cask "spotify"
+cask "slack"
 cask "spotify-notifications"
 cask "vlc"
