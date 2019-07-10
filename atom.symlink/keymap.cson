@@ -3,6 +3,7 @@
 
 'atom-text-editor:not([mini])':
   'ctrl-shift-K': 'editor:delete-line'
+  'cmd-ª': 'rails-snippets:toggleErb'
 
 '.platform-darwin atom-text-editor':
   'ctrl-+': 'atom-ctags:go-to-declaration'
