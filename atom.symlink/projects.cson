@@ -139,12 +139,6 @@
     ]
   }
   {
-    title: "Puntoa"
-    paths: [
-      "/Users/ealbertos/src/puntoa"
-    ]
-  }
-  {
     title: "Hemisferioderecho"
     paths: [
       "/Users/ealbertos/src/hemisferioderecho"
@@ -438,6 +432,24 @@
     title: "Perfectspace In Home"
     paths: [
       "/Users/ealbertos/src/perfectspace-in-home"
+    ]
+  }
+  {
+    title: "Perfectspaceweb"
+    paths: [
+      "/Users/ealbertos/src/perfectspaceweb"
+    ]
+  }
+  {
+    title: "La Reserva"
+    paths: [
+      "/Users/ealbertos/src/lareservayucatan.com"
+    ]
+  }
+  {
+    title: "Punto A"
+    paths: [
+      "/Users/ealbertos/src/punto-a"
     ]
   }
 ]
