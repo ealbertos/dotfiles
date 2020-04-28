@@ -1,11 +1,5 @@
 [
   {
-    title: "andamios"
-    paths: [
-      "/Users/ealbertos/src/andamios"
-    ]
-  }
-  {
     title: "jrenvases_system"
     paths: [
       "/Users/ealbertos/src/jrenvases_system"
@@ -450,6 +444,42 @@
     title: "Punto A"
     paths: [
       "/Users/ealbertos/src/punto-a"
+    ]
+  }
+  {
+    title: "Exhibitionsdata"
+    paths: [
+      "/Users/ealbertos/src/exhibitionsdata"
+    ]
+  }
+  {
+    title: "Ricalpe"
+    paths: [
+      "/Users/ealbertos/src/ricalpe"
+    ]
+  }
+  {
+    title: "Erase Una Vez"
+    paths: [
+      "/Users/ealbertos/src/erase-una-vez"
+    ]
+  }
+  {
+    title: "Grupo Gal"
+    paths: [
+      "/Users/ealbertos/src/grupo-gal"
+    ]
+  }
+  {
+    title: "Andamios"
+    paths: [
+      "/Users/ealbertos/src/andamios"
+    ]
+  }
+  {
+    title: "Youbette Com"
+    paths: [
+      "/Users/ealbertos/src/youbette.com"
     ]
   }
 ]

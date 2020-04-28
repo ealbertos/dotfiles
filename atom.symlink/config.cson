@@ -17,7 +17,6 @@
     closeDeletedFileTabs: true
     disabledPackages: [
       "language-gfm"
-      "city-lights-icons"
     ]
     telemetryConsent: "no"
     themes: [
@@ -32,6 +31,8 @@
     fontSize: 18
   "exception-reporting":
     userId: "c0e70ccd-6263-4e76-825a-3c7955807bd2"
+  "hypest-dark":
+    vibrancy: true
   "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
@@ -43,6 +44,7 @@
   "one-dark-ui": {}
   "pie-ui":
     fontSize: 14
+  "relative-numbers": {}
   "seti-ui":
     compactView: true
     fileIcons: false
@@ -52,5 +54,7 @@
     usePreviewTabs: false
   "tree-view":
     alwaysOpenExisting: true
+  "vim-mode-plus":
+    startInInsertMode: true
   welcome:
     showOnStartup: false
