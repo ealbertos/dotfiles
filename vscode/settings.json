@@ -26,5 +26,8 @@
     "window.newWindowDimensions": "inherit",
     "window.title": "${rootName}${separator}${activeEditorMedium}${separator}",
     "workbench.colorTheme": "EA Chester",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "editor.scrollBeyondLastLine": false,
+    "workbench.iconTheme": "file-icons",
+    "explorer.autoReveal": false
 }
