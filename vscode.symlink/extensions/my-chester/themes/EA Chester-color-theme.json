@@ -221,10 +221,17 @@
 		}
 	},
 	{
-		"name": "Other Variables",
+		"name": "Global Variables",
 		"scope": "variable.other",
 		"settings": {
 			"foreground": "#FA5E5B"
+		}
+	},
+	{
+		"name": "Local Variables",
+		"scope": "variable.other.ruby",
+		"settings": {
+			"foreground": "#ffffff"
 		}
 	},
 	{
@@ -341,6 +348,44 @@
 		"scope": "token.debug-token",
 		"settings": {
 			"foreground": "#b267e6"
+		}
+	},
+	{
+		"name": "Brackets",
+		"scope": "punctuation.section.array",
+		"settings": {
+			"foreground": "#b267e6"
+		}
+	},
+	{
+		"name": "Parenthesis",
+		"scope": "punctuation.definition.parameters.ruby",
+		"settings": {
+			"foreground": "#27dede"
+		}
+	},
+	{
+		"name": "Embedded ruby",
+		"scope": "punctuation.section.embedded.begin.erb",
+		"settings": {
+			"foreground": "#b267e6"
+		}
+	},
+	{
+		"name": "Interpolated ruby",
+		"scope": "string.quoted.double.interpolated.ruby",
+		"settings": {
+			"foreground": "#b267e6"
+		}
+	},
+	{
+		"name": "Interpolated ruby",
+		"scope": [
+					"punctuation.definition.string.begin",
+					"punctuation.definition.string.end"
+				],
+		"settings": {
+			"foreground": "#ffffff"
 		}
 	},
 	{
