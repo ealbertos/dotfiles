@@ -17,6 +17,9 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 18,
     "editor.minimap.enabled": false,
+    // Line number column settings
+    // "editor.folding": false,
+    "editor.glyphMargin": false, //Disable debug point breaks
     "window.zoomLevel": 0,
     "emmet.includeLanguages": {
         "erb": "html"

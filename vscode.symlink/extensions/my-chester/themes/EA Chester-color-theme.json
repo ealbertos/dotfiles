@@ -366,7 +366,10 @@
 	},
 	{
 		"name": "Embedded ruby",
-		"scope": "punctuation.section.embedded.begin.erb",
+		"scope": [
+					"punctuation.section.embedded.begin.erb",
+					"punctuation.section.embedded.end.erb"
+				],
 		"settings": {
 			"foreground": "#b267e6"
 		}

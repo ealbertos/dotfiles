@@ -81,5 +81,10 @@
 		"body": ".update_attributes(\n\t${1:attribute}, \"${2:value}\"\n\t${3:attribute_2}, \"${4:value_2}\"\n)",
 		"scope": "source.ruby, source.ruby.rails, meta.rails.controller, meta.rails.model"
 	},
+	"change_column_null": {
+		"prefix": "change_column_null",
+		"body": "change_column_null :${1:table}, :${2:column}, ${3:true_false}, \"${4:default_value\"}",
+		"scope": "source.ruby, source.ruby.rails, meta.rails.controller, meta.rails.model"
+	},
 	
 }
