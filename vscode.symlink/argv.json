@@ -12,5 +12,13 @@
 
 	// Enabled by default by VS Code to resolve color issues in the renderer
 	// See https://github.com/Microsoft/vscode/issues/51791 for details
-	"disable-color-correct-rendering": true
+	"disable-color-correct-rendering": true,
+
+	// Allows to disable crash reporting.
+	// Should restart the app if the value is changed.
+	"enable-crash-reporter": false,
+
+	// Unique id used for correlating crash reports sent from this instance.
+	// Do not edit this value.
+	"crash-reporter-id": "54b56f60-5328-465b-a3b2-25a6978e5c67"
 }

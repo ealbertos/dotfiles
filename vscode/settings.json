@@ -4,7 +4,7 @@
     "sync.gist": "20308847727bcd5d2682",
     "workbench.startupEditor": "newUntitledFile",
     "atomKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "alt",
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "projectManager.openInNewWindowWhenClickingInStatusBar": true,
     "projectManager.openInCurrenWindowIfEmpty": "never",
@@ -16,7 +16,6 @@
     "vscode-erb-beautify.tabStops": 4,
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 18,
-    "editor.minimap.enabled": false,
     // Line number column settings
     // "editor.folding": false,
     "editor.glyphMargin": false, //Disable debug point breaks
@@ -27,10 +26,48 @@
     "workbench.colorCustomizations": {
     },
     "window.newWindowDimensions": "inherit",
-    "window.title": "${rootName}${separator}${activeEditorMedium}${separator}",
+    "window.title": "${rootName}${separator}${activeEditorShort}$",
     "workbench.colorTheme": "EA Chester",
     "editor.fontLigatures": true,
     "editor.scrollBeyondLastLine": false,
     "workbench.iconTheme": "file-icons",
-    "explorer.autoReveal": false
+    "explorer.autoReveal": false,
+
+    "[html]": {
+        "editor.selectionHighlight": false,
+        "editor.occurrencesHighlight": false
+
+    },
+    "[erb]": {
+        "editor.selectionHighlight": false,
+        "editor.occurrencesHighlight": false
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "gitlens.hovers.currentLine.details": false,
+    "gitlens.views.repositories.enabled": false,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "gitlens.views.search.enabled": false,
+    "gitlens.views.compare.enabled": false,
+    "gitlens.menus": {
+        "editor": false,
+        "editorGroup": false,
+        "editorTab": false,
+        "explorer": false,
+        "scmGroup": false,
+        "scmItem": false
+    },
+    "gitlens.hovers.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "explorer.confirmDelete": false,
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false
 }

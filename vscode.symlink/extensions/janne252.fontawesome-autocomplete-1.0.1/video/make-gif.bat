@@ -1,2 +1,0 @@
-start /wait ffmpeg -y -i .\demo-autocomplete.mp4 -vf fps=30,scale=1024:-1:flags=lanczos,palettegen palette.png
-start /wait ffmpeg -y -i .\demo-autocomplete.mp4 -i palette.png -filter_complex "fps=30,scale=1024:-1:flags=lanczos[x];[x][1:v]paletteuse" demo-autocomplete.gif
