@@ -74,5 +74,6 @@
     "editor.cursorSmoothCaretAnimation": true,
     "editor.renderIndentGuides": true,
     "workbench.editor.highlightModifiedTabs": true,
+    "workbench.activityBar.visible": false,
 
 }
