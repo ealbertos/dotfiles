@@ -68,6 +68,5 @@
             "password": "{{put-password-here}}"
         }
     ],
-    "editor.minimap.enabled": false,
-    "workbench.activityBar.visible": false
+    "editor.minimap.enabled": false
 }
