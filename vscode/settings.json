@@ -71,7 +71,7 @@
     "editor.minimap.enabled": false,
 
     "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": false,
     "editor.renderIndentGuides": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
