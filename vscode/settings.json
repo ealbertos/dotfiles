@@ -68,5 +68,11 @@
             "password": "{{put-password-here}}"
         }
     ],
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.renderIndentGuides": true,
+    "workbench.editor.highlightModifiedTabs": true,
+
 }
