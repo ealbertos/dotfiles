@@ -74,5 +74,6 @@
     "editor.renderIndentGuides": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.activityBar.visible": false,
+    "editor.tabSize": 2,
 
 }
