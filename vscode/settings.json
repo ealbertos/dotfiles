@@ -18,8 +18,7 @@
     "editor.fontSize": 18,
     // Line number column settings
     // "editor.folding": false,
-    "editor.glyphMargin": false, //Disable debug point breaks
-    "window.zoomLevel": 0,
+    "editor.glyphMargin": false,
     "emmet.includeLanguages": {
         "erb": "html"
     },
