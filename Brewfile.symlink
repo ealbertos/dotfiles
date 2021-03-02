@@ -6,8 +6,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "puma/puma"
-
-
 brew "autoconf"
 brew "ecm"
 brew "libpng"
