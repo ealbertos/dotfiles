@@ -10,9 +10,6 @@
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
-# Don’t show recent applications in Dock
-	defaults write com.apple.dock show-recents -bool false
-
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
@@ -22,6 +19,9 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+
+# Prevent Safari from opening ‘safe’ files automatically after downloading
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -49,6 +49,21 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain "InitialKeyRepeat_Level_Saved" -int 4
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Enable full keyboard access for all controls
+# (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+###############################################################################
+# Screen                                                                      #
+###############################################################################
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
 ###############################################################################
 # Finder                                                                      #
@@ -90,6 +105,10 @@ defaults write com.apple.Finder FXPreferredViewStyle clmv
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+# Use column view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `Nlsv`, `glyv`
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
@@ -111,9 +130,6 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Dashboard
-defaults write com.apple.dock wvous-bl-corner -int 7
-defaults write com.apple.dock wvous-bl-modifier -int 0
-# Bottom left screen corner → Dashboard
 defaults write com.apple.dock wvous-br-corner -int 12
 defaults write com.apple.dock wvous-br-modifier -int 0
 
@@ -123,9 +139,23 @@ defaults write com.apple.TextEdit RichText -int 0
 # Use the system-native print preview dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
 
+# Minimize windows into their application’s icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+#defaults write com.apple.dock persistent-apps -array
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
 ###############################################################################
-# Spectacle.app                                                               #
+# Other                                                            #
 ###############################################################################
 
-# Set up my preferred keyboard shortcuts for Spectacle
-cp -r system/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+# Automatically quit printer app once the print jobs complete
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
