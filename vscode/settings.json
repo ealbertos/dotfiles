@@ -43,9 +43,7 @@
     },
     "workbench.editor.tabSizing": "shrink",
     "gitlens.hovers.currentLine.details": false,
-    "gitlens.views.repositories.enabled": false,
     "gitlens.views.fileHistory.enabled": false,
-    "gitlens.views.lineHistory.enabled": false,
     "gitlens.views.search.enabled": false,
     "gitlens.views.compare.enabled": false,
     "gitlens.menus": {
@@ -74,5 +72,6 @@
     "editor.renderIndentGuides": true,
     "workbench.editor.highlightModifiedTabs": true,
     "editor.tabSize": 2,
+    "terminal.integrated.fontSize": 15,
 
 }

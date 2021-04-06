@@ -26,3 +26,5 @@ alias g='git'
 alias ga='git add'
 alias uncache='git rm --cached -r '
 alias grebase='git pull --rebase'
+alias amend= "!git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend"
+alias gtrim= "git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
