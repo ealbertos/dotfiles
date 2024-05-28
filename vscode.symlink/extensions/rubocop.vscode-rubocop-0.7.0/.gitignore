@@ -1,5 +1,0 @@
-*.vsix
-.vscode-test
-.ruby-version
-node_modules
-out
