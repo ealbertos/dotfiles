@@ -1,0 +1,104 @@
+{
+	"name": "learn-with-sumit-theme",
+	"displayName": "Learn with Sumit Theme",
+	"description": "Official VS Code theme of Learn with Sumit!",
+	"icon": "images/logo.png",
+	"version": "11.1.0",
+	"publisher": "SumitSaha",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/learnwithsumit/learn-with-sumit-vscode-theme"
+	},
+	"engines": {
+		"vscode": "^1.16.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"dark theme",
+		"light theme",
+		"learn with sumit",
+		"learnwithsumit",
+		"sumit saha"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Learn with Sumit Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/default-color-theme.json"
+			},
+			{
+				"label": "Learn with Sumit Official Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/official-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Peace of the eye",
+				"uiTheme": "vs-dark",
+				"path": "./themes/peace-of-eye-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Simple as light",
+				"uiTheme": "vs",
+				"path": "./themes/simple-as-light-theme.json"
+			},
+			{
+				"label": "Learn with Sumit Theme - Dracula version",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dracula-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Peace of the eye - Dracula version",
+				"uiTheme": "vs-dark",
+				"path": "./themes/peace-of-eye-dracula-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Shades of Grey",
+				"uiTheme": "vs-dark",
+				"path": "./themes/shades-of-grey-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Vintage",
+				"uiTheme": "vs-dark",
+				"path": "./themes/vintage-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Blue Velvet",
+				"uiTheme": "vs-dark",
+				"path": "./themes/blue-velvet-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Traditional",
+				"uiTheme": "vs-dark",
+				"path": "./themes/traditional-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Professional",
+				"uiTheme": "vs-dark",
+				"path": "./themes/professional-theme.json"
+			},
+			{
+				"label": "Learn with Sumit - Party",
+				"uiTheme": "vs-dark",
+				"path": "./themes/party-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "466e3c46-a580-40b7-97ed-c92be7fd4189",
+		"publisherId": "4afe2435-2478-470c-92f5-32f57daa1d50",
+		"publisherDisplayName": "Learn with Sumit",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1712701561564,
+		"preRelease": false,
+		"hasPreReleaseVersion": false,
+		"pinned": false,
+		"source": "gallery"
+	}
+}

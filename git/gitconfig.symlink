@@ -38,3 +38,8 @@
 
 [init]
 	defaultBranch = main
+[user]
+	name = Eduardo Albertos G
+	email = albertos.eduardo@gmail.com
+[github]
+	user = ealbertos
