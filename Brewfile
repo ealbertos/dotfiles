@@ -23,9 +23,9 @@ brew "openssl"
 brew "mysql", restart_service: true
 brew "pcre"
 brew "nginx", restart_service: true
+brew "nvm"
 brew "node"
 brew "node-build"
-brew "nodenv"
 brew "openssl@1.1"
 brew "pkg-config"
 brew "readline", link: true
@@ -40,12 +40,13 @@ brew "zsh"
 brew "zsh-completions"
 
 
-
 cask "bartender"
 cask "browserosaurus"
 cask "istat-menus"
 cask "visual-studio-code"
 cask "firefox@developer-edition"
+cask "google-chrome"
+cask "chromedriver"
 cask "iterm2"
 cask "keepingyouawake"
 cask "quitter"

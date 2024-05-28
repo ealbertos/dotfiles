@@ -8,3 +8,8 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# rake
+alias rakemig='bundle exec rake db:migrate'
+alias rakeset='bundle exec rake db:setup'
+alias rakeseed='bundle exec rake db:seed'
