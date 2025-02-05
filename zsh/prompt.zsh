@@ -77,7 +77,7 @@ directory_name() {
 }
 
 # emojis in the prompt.
-export PROMPT=$'$(directory_name) $(rb_prompt)$(git_dirty)$(need_push)%(?:👍 :👎 %s) '
+export PROMPT=$'$(directory_name) $(rb_prompt)$(git_dirty)$(need_push)%(?:👍 :😵 %s) '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
