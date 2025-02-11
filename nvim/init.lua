@@ -30,7 +30,7 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- save file
-vim.keymap.set({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr>", { desc = "Guardar archivo" })
+vim.keymap.set({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr><Esc>", { desc = "Guardar archivo y salir de inserción" })
 vim.keymap.set("n", "J", "mzJ`z")
 
 -- new file
