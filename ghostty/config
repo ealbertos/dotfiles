@@ -1,0 +1,12 @@
+theme = Argonaut
+font-size = 16
+font-family = FiraCode Nerd Font Mono
+window-save-state = always
+font-thicken = true
+cursor-style = block
+cursor-color = #605D5D
+cursor-text = #FDFDFD
+window-height = 8
+window-width = 8
+
+keybind = shift+ctrl+opt+cmd+z=toggle_secure_input
