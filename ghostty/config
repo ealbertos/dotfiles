@@ -1,4 +1,4 @@
-theme = Argonaut
+theme = Banana Blueberry
 font-size = 16
 font-family = FiraCode Nerd Font Mono
 window-save-state = always
@@ -8,5 +8,6 @@ cursor-color = #605D5D
 cursor-text = #FDFDFD
 window-height = 8
 window-width = 8
+macos-icon = retro
 
 keybind = shift+ctrl+opt+cmd+z=toggle_secure_input
