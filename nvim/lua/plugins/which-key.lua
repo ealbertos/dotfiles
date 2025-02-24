@@ -2,9 +2,6 @@ return {
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
   },
   keys = {
     {
@@ -15,4 +12,17 @@ return {
       desc = "Buffer Local Keymaps (which-key)",
     },
   },
+  config = function()
+    local wk = require("which-key")
+
+    wk.add({
+      { "<leader> ", group = "Find File",    desc = "Find File" },
+      { "<leader>/", group = "Live Grep",    desc = "Live Grep" },
+      { "<leader>b", group = "Buffers" },
+      { "<leader>e", group = "Oil File Tree" },
+      { "<leader>f", group = "Files" },
+      { "<leader>g", group = "Git" },
+      { "<leader>n", group = "NoNeckPain" },
+    })
+  end,
 }
