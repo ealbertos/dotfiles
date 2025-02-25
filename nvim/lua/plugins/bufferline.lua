@@ -21,6 +21,9 @@ return {
       right_mouse_command = function(n) Snacks.bufdelete(n) end,
       diagnostics = "nvim_lsp",
       always_show_bufferline = true,
+      numbers = function(opts)
+        return string.format('%s·%s', opts.raise(opts.ordinal), opts.lower(opts.id))
+      end
     },
   },
   config = function(_, opts)
