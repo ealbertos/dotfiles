@@ -2,7 +2,8 @@ return {
   "akinsho/bufferline.nvim",
   event = "VeryLazy",
   keys = {
-    { "<leader>bp", "<Cmd>BufferLineTogglePin<CR>",                          desc = "Toggle Pin" },
+    { "<leader>bp", "<Cmd>BufferLinePick<CR>",                               desc = "Pick Buffer" },
+    { "<leader>bc", "<Cmd>BufferLinePickClose<CR>",                          desc = "Pick and Close" },
     { "<leader>bP", "<Cmd>BufferLineGroupClose ungrouped<CR>",               desc = "Delete Non-Pinned Buffers" },
     { "<leader>br", "<Cmd>BufferLineCloseRight<CR>",                         desc = "Delete Buffers to the Right" },
     { "<leader>bl", "<Cmd>BufferLineCloseLeft<CR>",                          desc = "Delete Buffers to the Left" },
@@ -21,9 +22,9 @@ return {
       right_mouse_command = function(n) Snacks.bufdelete(n) end,
       diagnostics = "nvim_lsp",
       always_show_bufferline = true,
-      numbers = function(opts)
-        return string.format('%s·%s', opts.raise(opts.ordinal), opts.lower(opts.id))
-      end
+      -- numbers = function(opts)
+      --   return string.format('%s·%s', opts.raise(opts.ordinal), opts.lower(opts.id))
+      -- end
     },
   },
   config = function(_, opts)
