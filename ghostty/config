@@ -9,5 +9,3 @@ cursor-text = #FDFDFD
 window-height = 8
 window-width = 8
 macos-icon = retro
-
-keybind = shift+ctrl+opt+cmd+z=toggle_secure_input

@@ -20,11 +20,5 @@ return {
       enabled = true,
       timeout = 3000,
     },
-    explorer = {
-      enabled = false,
-    },
-    picker = {
-      enabled = false,
-    },
   },
 }

@@ -1,4 +1,3 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
 vim.opt.clipboard = "unnamedplus"
@@ -41,8 +40,8 @@ vim.keymap.set("n", "<leader>xl", "<cmd>lopen<cr>", { desc = "Location List" })
 
 vim.cmd("autocmd FileType ruby setlocal indentkeys-=.")
 
-vim.api.nvim_create_autocmd("TextYankPost", {
-  desc = "Highlight when yanking (copying) text",
+vim.api.nvim_create_autocmd('TextYankPost', {
+  desc = 'Highlight when yanking (copying) text',
 
   callback = function()
     vim.highlight.on_yank()

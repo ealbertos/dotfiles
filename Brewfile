@@ -1,66 +1,170 @@
-cask_args appdir: '/Applications'
-
+tap "charmbracelet/tap"
 tap "github/bootstrap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "jesseduffield/lazygit"
 tap "puma/puma"
-
-brew "autoconf"
-brew "ecm"
+tap "twilio/brew"
 brew "libpng"
-brew "freetype"
-brew "jpeg"
-brew "libtiff"
-brew "libtool"
-brew "graphicsmagick"
 brew "xz"
+brew "libtiff"
+brew "jpeg-xl"
+brew "openssl@3"
+brew "grpc"
+brew "readline", link: true
+brew "llvm"
+brew "apache-arrow"
+brew "autoconf"
+brew "boost"
+brew "freetype"
+brew "glib"
+brew "cairo"
+brew "cgal"
+brew "ecm"
+brew "libtool"
+brew "elixir"
+brew "fd"
+brew "fzf"
+brew "gcc"
+brew "geos"
+brew "unbound"
+brew "gnupg"
+brew "gpgme"
+brew "pkgconf"
+brew "hdf5"
+brew "proj"
+brew "python@3.12"
+brew "libheif"
+brew "libpq"
+brew "libspatialite"
+brew "netcdf"
+brew "numpy"
+brew "poppler"
+brew "gdal"
+brew "gh"
+brew "ghostscript"
+brew "graphicsmagick"
+brew "liblqr"
+brew "libraw"
 brew "imagemagick"
-brew "launch_socket_server", restart_service: true
-brew "launchdns", restart_service: true
+brew "jpeg"
+brew "launch_socket_server", restart_service: :changed
+brew "launchdns", restart_service: :changed
+brew "lazygit"
 brew "libmaxminddb"
-brew "openssl"
-brew "mysql", restart_service: true
-brew "pcre"
-brew "nginx", restart_service: true
-brew "nvm"
+brew "lua-language-server"
+brew "mailhog"
+brew "mysql"
+brew "neovim"
+brew "nginx", restart_service: :changed
 brew "node"
 brew "node-build"
+brew "node@18"
+brew "nvm"
 brew "openssl@1.1"
-brew "pkg-config"
-brew "readline", link: true
-brew "postgresql@14", restart_service: true
+brew "pcre"
+brew "protobuf-c"
+brew "sfcgal"
+brew "postgis"
+brew "postgresql@14", restart_service: :changed
 brew "ruby-build"
 brew "rbenv"
-brew "redis", restart_service: true
-brew "sqlite"
+brew "redis", restart_service: :changed
+brew "ripgrep"
+brew "tmux"
 brew "wget"
 brew "yarn"
 brew "zsh"
 brew "zsh-completions"
-
-
-cask "bartender"
-cask "browserosaurus"
-cask "istat-menus"
-cask "visual-studio-code"
-cask "firefox@developer-edition"
-cask "google-chrome"
+cask "basecamp", args: { appdir: "/Applications" }
+cask "beardedspice", args: { appdir: "/Applications" }
+cask "bitwarden", args: { appdir: "/Applications" }
+cask "browserosaurus", args: { appdir: "/Applications" }
+cask "chatgpt", args: { appdir: "/Applications" }
+cask "cursor", args: { appdir: "/Applications" }
 cask "chromedriver"
-cask "iterm2"
-cask "keepingyouawake"
-cask "quitter"
-cask "slack"
-cask "Spotify"
-cask "tableplus"
-cask "warp"
-cask "WhatsApp"
-cask "notion"
-cask "zoom"
-cask "telegram"
-cask "beardedspice"
-cask "bitwarden"
-cask "logi-options-plus"
-cask "monitorcontrol"
-cask "rectangle"
+cask "firefox@developer-edition", args: { appdir: "/Applications" }
+cask "ghostty"
+cask "google-chrome"
+cask "hey-desktop", args: { appdir: "/Applications" }
+cask "istat-menus", args: { appdir: "/Applications" }
+cask "keepingyouawake", args: { appdir: "/Applications" }
+cask "logi-options+", args: { appdir: "/Applications" }
+cask "macdown"
 cask "macmediakeyforwarder"
+cask "monitorcontrol", args: { appdir: "/Applications" }
+cask "notion", args: { appdir: "/Applications" }
+cask "obsidian", args: { appdir: "/Applications" }
+cask "quitter", args: { appdir: "/Applications" }
+cask "raycast", args: { appdir: "/Applications" }
+cask "slack", args: { appdir: "/Applications" }
+cask "spotify", args: { appdir: "/Applications" }
+cask "tableplus", args: { appdir: "/Applications" }
+cask "telegram", args: { appdir: "/Applications" }
+cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "warp", args: { appdir: "/Applications" }
+cask "whatsapp", args: { appdir: "/Applications" }
+cask "zoom", args: { appdir: "/Applications" }
+vscode "aki77.rails-routes"
+vscode "alefragnani.project-manager"
+vscode "aliariff.vscode-erb-beautify"
+vscode "beardedbear.beardedtheme"
+vscode "bierner.github-markdown-preview"
+vscode "bierner.markdown-checkbox"
+vscode "bierner.markdown-emoji"
+vscode "bierner.markdown-footnotes"
+vscode "bierner.markdown-preview-github-styles"
+vscode "bierner.markdown-yaml-preamble"
+vscode "bradgashler.htmltagwrap"
+vscode "bung87.rails"
+vscode "bung87.vscode-gemfile"
+vscode "castwide.solargraph"
+vscode "codezombiech.gitignore"
+vscode "craigmaslowski.erb"
+vscode "dannymcgee.summer-vacation-theme"
+vscode "dbankier.vscode-quick-select"
+vscode "dkundel.vscode-new-file"
+vscode "donjayamanne.git-extension-pack"
+vscode "donjayamanne.githistory"
+vscode "eamodio.gitlens"
+vscode "eliverlara.andromeda"
+vscode "emmanuelbeziat.vscode-great-icons"
+vscode "file-icons.file-icons"
+vscode "formulahendry.auto-close-tag"
+vscode "formulahendry.auto-rename-tag"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "hridoy.rails-snippets"
+vscode "jackw01.summer-night-theme"
+vscode "jemmyw.rails-fast-nav"
+vscode "kaiwood.endwise"
+vscode "mechatroner.rainbow-csv"
+vscode "misogi.ruby-rubocop"
+vscode "mrmlnc.vscode-duplicate"
+vscode "ms-mssql.data-workspace-vscode"
+vscode "ms-mssql.mssql"
+vscode "ms-mssql.sql-bindings-vscode"
+vscode "ms-mssql.sql-database-projects-vscode"
+vscode "ms-vscode.atom-keybindings"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "oderwat.indent-rainbow"
+vscode "pnp.polacode"
+vscode "redhat.vscode-commons"
+vscode "redhat.vscode-yaml"
+vscode "rubocop.vscode-rubocop"
+vscode "shardulm94.trailing-spaces"
+vscode "shopify.ruby-lsp"
+vscode "sianglim.slim"
+vscode "sleistner.vscode-fileutils"
+vscode "sumitsaha.learn-with-sumit-theme"
+vscode "testdouble.vscode-alternate-alternate-file"
+vscode "testdouble.vscode-standard-ruby"
+vscode "tmikoss.rails-latest-migration"
+vscode "vayan.haml"
+vscode "vincaslt.highlight-matching-tag"
+vscode "vortizhe.simple-ruby-erb"
+vscode "vscodevim.vim"
+vscode "wmaurer.change-case"
+vscode "zhuangtongfa.material-theme"
+vscode "ziyasal.vscode-open-in-github"

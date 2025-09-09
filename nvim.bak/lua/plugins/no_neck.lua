@@ -3,7 +3,7 @@ return {
     "shortcuts/no-neck-pain.nvim",
     version = "*",
     opts = {
-      width = 125,
+      width = 115,
       colors = {
         blend = 0.3,
         -- background = "#282c34",
