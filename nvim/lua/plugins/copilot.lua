@@ -4,21 +4,22 @@ return {
   build = ":Copilot auth",
   event = "BufReadPost",
   opts = {
+    panel = { enabled = false },
     suggestion = {
-      enabled = not vim.g.ai_cmp,
+      enabled = true,
       auto_trigger = true,
-      hide_during_completion = vim.g.ai_cmp,
       keymap = {
-        accept = false, -- handled by nvim-cmp / blink.cmp
+        accept = "<C-l>", -- o false si prefieres no mapear
         next = "<M-]>",
         prev = "<M-[>",
+        dismiss = "<C-]>",
       },
     },
-    panel = { enabled = false },
-    filetypes = {
+    filetypes = { -- ajusta si quieres excluir/permitir
       markdown = true,
-      help = true,
+      lua = true,
+      gitcommit = true,
+      ["*"] = true,
     },
   },
 }
-

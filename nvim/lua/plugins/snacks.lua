@@ -2,9 +2,10 @@ return {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
-  ---@type snacks.Config
   opts = {
     bufdelete = { enabled = true },
+    explorer = { enabled = false },
+    picker = { enabled = false },
     lazygit = { enabled = true },
     dashboard = {
       enabled = true,
@@ -19,12 +20,6 @@ return {
     notifier = {
       enabled = true,
       timeout = 3000,
-    },
-    explorer = {
-      enabled = false,
-    },
-    picker = {
-      enabled = false,
     },
   },
 }

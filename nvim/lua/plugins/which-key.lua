@@ -1,7 +1,8 @@
 return {
   "folke/which-key.nvim",
   event = "VeryLazy",
-  opts = {},
+  opts = {
+  },
   keys = {
     {
       "<leader>?",
@@ -22,6 +23,7 @@ return {
       { "<leader>f", group = "Files" },
       { "<leader>g", group = "Git" },
       { "<leader>n", group = "NoNeckPain" },
+      { "<leader>a", group = "Copilot" },
     })
   end,
 }
