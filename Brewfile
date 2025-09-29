@@ -1,8 +1,6 @@
 tap "charmbracelet/tap"
 tap "github/bootstrap"
 tap "heroku/brew"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "puma/puma"
 tap "twilio/brew"
@@ -62,7 +60,6 @@ brew "node"
 brew "node-build"
 brew "node@18"
 brew "nvm"
-brew "openssl@1.1"
 brew "pcre"
 brew "protobuf-c"
 brew "sfcgal"
@@ -105,7 +102,6 @@ cask "telegram", args: { appdir: "/Applications" }
 cask "visual-studio-code", args: { appdir: "/Applications" }
 cask "warp", args: { appdir: "/Applications" }
 cask "whatsapp", args: { appdir: "/Applications" }
-cask "zoom", args: { appdir: "/Applications" }
 vscode "aki77.rails-routes"
 vscode "alefragnani.project-manager"
 vscode "aliariff.vscode-erb-beautify"
