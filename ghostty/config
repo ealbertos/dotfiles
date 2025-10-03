@@ -9,3 +9,4 @@ cursor-text = #FDFDFD
 window-height = 8
 window-width = 8
 macos-icon = retro
+working-directory = inherit
