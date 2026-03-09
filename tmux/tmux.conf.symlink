@@ -65,3 +65,7 @@ bind-key -n M-0 select-window -t 0
 
 # Clear pane (screen + scrollback) like Cmd+K
 bind-key -n M-k send-keys -R "clear" \; send-keys Enter \; run-shell "tmux clear-history"
+
+# Open project picker (tmux-sessionizer) in a floating popup.
+# Uses Alt+F to match the existing Alt-based window navigation pattern.
+bind-key -n M-f display-popup -E "tmux-sessionizer"

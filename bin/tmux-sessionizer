@@ -21,39 +21,37 @@ hydrate() {
     fi
 }
 
-run_tmuxinator_if_available() {
+find_tmuxinator() {
+    if [ -x "/opt/homebrew/bin/tmuxinator" ]; then
+        echo "/opt/homebrew/bin/tmuxinator"
+    elif [ -x "/usr/local/bin/tmuxinator" ]; then
+        echo "/usr/local/bin/tmuxinator"
+    elif command -v tmuxinator >/dev/null 2>&1; then
+        command -v tmuxinator
+    fi
+}
+
+run_with_tmuxinator() {
     local selected_path="$1"
-    local selected_basename
-    selected_basename="$(basename "$selected_path")"
+    local selected_name="$2"
 
     local dotfiles_root
     dotfiles_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
-    local tmuxinator_project="$dotfiles_root/tmux/simplepractice.yml"
+    local tmuxinator_template="$dotfiles_root/tmux/template.yml"
 
-    if [[ "$selected_basename" != "simplepractice" ]]; then
+    if [ ! -f "$tmuxinator_template" ]; then
         return 1
     fi
 
-    if [ ! -f "$tmuxinator_project" ]; then
+    local tmuxinator_cmd
+    tmuxinator_cmd="$(find_tmuxinator)"
+    if [ -z "$tmuxinator_cmd" ]; then
         return 1
     fi
 
-    local tmuxinator_cmd=""
-    if [ -x "/opt/homebrew/bin/tmuxinator" ]; then
-        tmuxinator_cmd="/opt/homebrew/bin/tmuxinator"
-    elif [ -x "/usr/local/bin/tmuxinator" ]; then
-        tmuxinator_cmd="/usr/local/bin/tmuxinator"
-    elif command -v tmuxinator >/dev/null 2>&1; then
-        tmuxinator_cmd="$(command -v tmuxinator)"
-    else
-        return 1
-    fi
-
-    if "$tmuxinator_cmd" start -p "$tmuxinator_project"; then
-        return 0
-    fi
-
-    return 1
+    TMUXINATOR_PROJECT_NAME="$selected_name" \
+    TMUXINATOR_PROJECT_ROOT="$selected_path" \
+        "$tmuxinator_cmd" start -p "$tmuxinator_template"
 }
 
 pick_directory() {
@@ -96,13 +94,21 @@ if [[ -z $selected ]]; then
     exit 0
 fi
 
-if run_tmuxinator_if_available "$selected"; then
-    exit 0
-fi
-
 selected_name=$(basename "$selected" | tr . _)
 tmux_running=$(pgrep tmux)
 
+# If the session already exists, just switch to it.
+if has_session "$selected_name"; then
+    switch_to "$selected_name"
+    exit 0
+fi
+
+# New session: try tmuxinator first for a full window layout.
+if run_with_tmuxinator "$selected" "$selected_name"; then
+    exit 0
+fi
+
+# Fallback: create a plain session with nvim open in the first window.
 if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
     tmux new-session -s "$selected_name" -c "$selected"
     tmux send-keys -t "$selected_name" "nvim" C-m
@@ -110,10 +116,8 @@ if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
     exit 0
 fi
 
-if ! has_session "$selected_name"; then
-    tmux new-session -ds "$selected_name" -c "$selected"
-    tmux send-keys -t "$selected_name" "nvim" C-m
-    hydrate "$selected_name" "$selected"
-fi
+tmux new-session -ds "$selected_name" -c "$selected"
+tmux send-keys -t "$selected_name" "nvim" C-m
+hydrate "$selected_name" "$selected"
 
 switch_to "$selected_name"
