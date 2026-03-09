@@ -66,6 +66,80 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
+## tmux-sessionizer
+
+`tmux-sessionizer` is a project-picker that lets you jump into any project as a
+dedicated tmux session with one keystroke. When tmuxinator is installed it
+automatically opens three windows — **nvim** at the project root, and two
+plain **terminal** windows — so you land in a ready-to-code environment.
+
+### Prerequisites
+
+| Tool | Required? | Install |
+|------|-----------|---------|
+| [tmux](https://github.com/tmux/tmux) | **yes** | `brew install tmux` |
+| [fzf](https://github.com/junegunn/fzf) | **yes** | `brew install fzf` |
+| [fd](https://github.com/sharkdp/fd) | recommended | `brew install fd` |
+| [tmuxinator](https://github.com/tmuxinator/tmuxinator) | optional (richer layout) | `brew install tmuxinator` |
+| [Neovim](https://neovim.io) | optional (used in window 1) | `brew install neovim` |
+
+### Project directories
+
+By default `tmux-sessionizer` searches **one level deep** inside these two
+folders:
+
+```
+~/dev/
+~/Code/
+```
+
+Create either (or both) directories and put your projects inside them:
+
+```sh
+mkdir -p ~/dev
+git clone git@github.com:you/my-project.git ~/dev/my-project
+```
+
+### How to invoke it
+
+| Where | Keys | What happens |
+|-------|------|--------------|
+| Inside **tmux** | **Alt + F** | Opens an fzf picker in a floating popup |
+| Any **shell prompt** | **Ctrl + G** | Runs the picker inline in your terminal |
+| **Command line** | `tmux-sessionizer` | Same as above (it's on your `$PATH`) |
+| **Pass a path directly** | `tmux-sessionizer ~/dev/my-project` | Skips the picker and opens that project |
+
+### What happens when you pick a project
+
+1. If a tmux session named after the project already exists you are
+   switched/attached to it immediately — nothing else changes.
+2. **With tmuxinator installed** a fresh session is created with three windows:
+   - `nvim` — starts `nvim .` at the project root
+   - `terminal` — plain shell at the project root
+   - `terminal2` — plain shell at the project root
+3. **Without tmuxinator** a single-window session is created and `nvim` is
+   launched automatically.
+
+### Per-project customisation
+
+Drop a `.tmux-sessionizer` shell script in the root of any project (or in
+`$HOME` for a global default). The script is sourced inside the new session
+after it is created, so you can run extra setup steps:
+
+```sh
+# ~/dev/my-project/.tmux-sessionizer
+tmux send-keys -t my-project "docker compose up -d" C-m
+```
+
+### Window layout reference
+
+```
+Session: my-project
+  0: nvim     ← nvim . (opened at project root)
+  1: terminal ← plain shell
+  2: terminal2 ← plain shell
+```
+
 ## bugs
 
 I want this to work for everyone; that means when you clone it down it should
