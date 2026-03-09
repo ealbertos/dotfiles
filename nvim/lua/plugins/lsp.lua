@@ -1,40 +1,29 @@
 return {
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      local lspconfig = require('lspconfig')
-      local capabilities = require('blink.cmp').get_lsp_capabilities()
+  "neovim/nvim-lspconfig",
+  opts = function(_, opts)
+    local util = require("lspconfig.util")
+    opts.servers = opts.servers or {}
 
-      lspconfig.lua_ls.setup {
-        capabilities = capabilities
-      }
+    -- Disable auto-detected rubocop LSP (we use none-ls instead)
+    opts.servers.rubocop = false
+    
+    -- Disable ruby_lsp (we use none-ls for diagnostics + Copilot + Treesitter)
+    opts.servers.ruby_lsp = false
 
-      lspconfig.ruby_lsp.setup({
-        enabled = true,
-        capabilities = capabilities,
-        init_options = {
-          formatter = 'standard',
-          linters = { 'standard' },
-        },
-        cmd = { "/Users/ealbertos/.rbenv/shims/ruby-lsp" },
-      })
+    -- 👇 Handlebars using HTML LSP
+    opts.servers.html = {
+      filetypes = { "html", "handlebars" },
+      root_dir = util.root_pattern(".git", "package.json"),
+    }
 
-      vim.api.nvim_create_autocmd('LspAttach', {
-        callback = function(args)
-          local client = vim.lsp.get_client_by_id(args.data.client_id)
-          if not client then return end
-          --@diagnostic disable-next-line: missing-parameter
-          if client.supports_method('textDocument/formatting') then
-            -- Format the current buffer on save
-            vim.api.nvim_create_autocmd('BufWritePre', {
-              buffer = args.buf,
-              callback = function()
-                vim.lsp.buf.format({ bufnr = args.buf, id = client.id })
-              end,
-            })
-          end
-        end,
-      })
-    end,
-  }
+    -- 👇 Emmet for HTML/CSS autocompletion
+    opts.servers.emmet_ls = {
+      filetypes = { "html", "handlebars", "css", "scss" },
+    }
+
+    -- Note: Ruby support is provided by:
+    -- - RuboCop via none-ls (diagnostics/formatting)
+    -- - Copilot (completions)
+    -- - Treesitter (syntax highlighting)
+  end,
 }

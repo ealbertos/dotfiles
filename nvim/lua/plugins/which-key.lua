@@ -1,8 +1,7 @@
 return {
   "folke/which-key.nvim",
   event = "VeryLazy",
-  opts = {
-  },
+  opts = {},
   keys = {
     {
       "<leader>?",
@@ -16,14 +15,16 @@ return {
     local wk = require("which-key")
 
     wk.add({
-      { "<leader> ", group = "Find File",    desc = "Find File" },
-      { "<leader>/", group = "Live Grep",    desc = "Live Grep" },
+      { "<leader> ", group = "Find File", desc = "Find File" },
+      { "<leader>/", group = "Live Grep", desc = "Live Grep" },
       { "<leader>b", group = "Buffers" },
       { "<leader>e", group = "Oil File Tree" },
       { "<leader>f", group = "Files" },
       { "<leader>g", group = "Git" },
       { "<leader>n", group = "NoNeckPain" },
       { "<leader>a", group = "Copilot" },
+      { "<leader>t", group = "Terminal Tab" },
+      { "<leader>u", group = "UI" },
     })
   end,
 }

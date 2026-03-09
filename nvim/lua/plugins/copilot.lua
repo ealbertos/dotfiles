@@ -9,7 +9,7 @@ return {
       enabled = true,
       auto_trigger = true,
       keymap = {
-        accept = "<C-l>", -- o false si prefieres no mapear
+        accept = false, -- handled by blink.cmp with <C-l>
         next = "<M-]>",
         prev = "<M-[>",
         dismiss = "<C-]>",
