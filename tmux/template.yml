@@ -1,0 +1,12 @@
+# Generic tmuxinator template used by tmux-sessionizer.
+# The project name and root are injected via environment variables
+# TMUXINATOR_PROJECT_NAME and TMUXINATOR_PROJECT_ROOT.
+name: <%= ENV.fetch("TMUXINATOR_PROJECT_NAME", "project") %>
+root: <%= ENV.fetch("TMUXINATOR_PROJECT_ROOT", "~") %>
+
+windows:
+  - nvim:
+      panes:
+        - nvim .
+  - terminal: ""
+  - terminal2: ""

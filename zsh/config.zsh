@@ -38,6 +38,10 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
 
+# Open project picker (tmux-sessionizer) with Ctrl+G from any shell prompt.
+# Ctrl+G avoids conflicts with zsh navigation bindings (^F is forward-char).
+bindkey -s '^g' 'tmux-sessionizer\n'
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
