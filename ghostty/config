@@ -10,3 +10,9 @@ window-height = 8
 window-width = 8
 macos-icon = retro
 working-directory = inherit
+
+quick-terminal-position = bottom
+quick-terminal-size = 40%
+quick-terminal-space-behavior = remain
+keybind = global:cmd+option+control+shift+t=toggle_quick_terminal
+

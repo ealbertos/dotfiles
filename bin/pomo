@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ICON="${HOME}/Pictures/pumpkin.png"
+SOUND="Crystal"
+
+# ---- ANSI colors ----
+BOLD="\033[1m"
+DIM="\033[2m"
+RESET="\033[0m"
+RED="\033[31m"
+GREEN="\033[32m"
+YELLOW="\033[33m"
+BLUE="\033[34m"
+MAGENTA="\033[35m"
+CYAN="\033[36m"
+
+# ---- Helpers ----
+command -v timer >/dev/null 2>&1 || {
+  echo "No encuentro 'timer' en PATH"
+  exit 1
+}
+command -v terminal-notifier >/dev/null 2>&1 || {
+  echo "No encuentro 'terminal-notifier' en PATH"
+  exit 1
+}
+
+notify() {
+  terminal-notifier \
+    -title "$1" \
+    -message "$2" \
+    -appIcon "$ICON" \
+    -sound "$SOUND"
+}
+
+set_title() {
+  printf '\033]0;%s\007' "$1"
+}
+
+reset_title() {
+  set_title "zsh"
+}
+
+hr() { printf "${DIM}────────────────────────────────────────${RESET}\n"; }
+
+trap reset_title EXIT
+
+clear || true
+printf "${BOLD}${MAGENTA}🍅  POMO${RESET}  ${DIM}(j k l ;)${RESET}\n"
+hr
+printf "${GREEN}j) 🧠 Work 25m${RESET}   ${DIM}— Pomodoro clásico${RESET}\n"
+printf "${BLUE}k) 🧱 Work 60m${RESET}   ${DIM}— Deep work${RESET}\n"
+printf "${YELLOW}l) ☕ Rest 10m${RESET}   ${DIM}— Break${RESET}\n"
+printf "${RED};) ✖ Cancelar${RESET}\n"
+hr
+printf "${BOLD}Opción:${RESET} "
+read -r -n 1 choice
+printf "\n"
+
+case "${choice:-}" in
+j | J)
+  printf "${CYAN}→ Iniciando Work 25m…${RESET}\n"
+  set_title "🍅 Work 25m"
+  timer 25m
+  notify "Work Timer is up! Take a Break 😊" "Pomodoro (25m)"
+  ;;
+k | K)
+  printf "${CYAN}→ Iniciando Work 60m…${RESET}\n"
+  set_title "🍅 Work 60m"
+  timer 60m
+  notify "Work Timer is up! Take a Break 😊" "Pomodoro (60m)"
+  ;;
+l | L)
+  printf "${CYAN}→ Iniciando Rest 10m…${RESET}\n"
+  set_title "☕ Rest 10m"
+  timer 10m
+  notify "Break is over! Get back to work 😬" "Rest (10m)"
+  ;;
+';')
+  printf "${DIM}Cancelado.${RESET}\n"
+  ;;
+*)
+  printf "${RED}Opción inválida.${RESET} (usa j k l ;)\n"
+  exit 1
+  ;;
+esac

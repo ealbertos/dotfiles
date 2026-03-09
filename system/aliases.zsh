@@ -13,3 +13,6 @@ fi
 alias rakemig='bundle exec rake db:migrate'
 alias rakeset='bundle exec rake db:setup'
 alias rakeseed='bundle exec rake db:seed'
+
+#SP
+alias sp='nocorrect sp'

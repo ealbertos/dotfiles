@@ -4,11 +4,8 @@ return {
     local util = require("lspconfig.util")
     opts.servers = opts.servers or {}
 
-    -- Disable auto-detected rubocop LSP (we use none-ls instead)
-    opts.servers.rubocop = false
-    
-    -- Disable ruby_lsp (we use none-ls for diagnostics + Copilot + Treesitter)
-    opts.servers.ruby_lsp = false
+    -- Ruby: use LSP (rubocop + ruby_lsp) — no Docker / none-ls in this repo
+    -- opts.servers.rubocop and opts.servers.ruby_lsp use LazyVim defaults when not set to false
 
     -- 👇 Handlebars using HTML LSP
     opts.servers.html = {
@@ -21,9 +18,6 @@ return {
       filetypes = { "html", "handlebars", "css", "scss" },
     }
 
-    -- Note: Ruby support is provided by:
-    -- - RuboCop via none-ls (diagnostics/formatting)
-    -- - Copilot (completions)
-    -- - Treesitter (syntax highlighting)
+    -- Ruby support: rubocop LSP + ruby_lsp (LSP only, no Docker)
   end,
 }

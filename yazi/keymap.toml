@@ -4,6 +4,21 @@ run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
 
 [[mgr.prepend_keymap]]
+on = ["g", "j"]
+run  = "cd ~/dev"
+desc = "Cd to ~/dev"
+
+[[mgr.prepend_keymap]]
 on = ["g", "o"]
-run  = "cd ~/Documents/obsidian_ealbertos/Ealbertos/"
+run  = "cd ~/Documents/Ealbertos"
 desc = "Obisdian vault"
+
+[[mgr.prepend_keymap]]
+on = ["g", "s"]
+run  = "cd ~/dev/simplepractice"
+desc = "SimplePractice repo"
+
+[[mgr.prepend_keymap]]
+on = ["g", "k"]
+run  = "cd ~/.dotfiles"
+desc = "Dotfiles"
